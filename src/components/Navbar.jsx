@@ -16,7 +16,7 @@ const Navbar = () => {
           Start your subscription today and save $4000 each month!
         </h2>
         <h2 className="md:hidden text-[12px] gilroy-sb text-black">
-          Start saving $4000/month now!
+          Start saving $4000/month!
         </h2>
         <div className="flex items-center justify-center space-x-0">
           <button className="bg-black text-[10px] md:text-[12px] lg:text-[15px] gilroy-sb border-2 border-black text-white px-2.5 sm:px-4 md:px-7 py-1.5 md:pb-2 rounded-full  transition">

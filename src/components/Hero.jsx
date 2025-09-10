@@ -20,14 +20,14 @@ const Hero = () => {
         </h2>
 
         <div className="flex items-center justify-center lg:justify-start mt-13">
-          <button className="flex items-center border-2 border-[#FF8419] bg-[#FF8419] text-[14px] lg:text-[17px] gilroy-sb text-white px-4 md:px-7 py-2.5 md:py-3.5 rounded-xl transition duration-300 hover:shadow-[0_0px_18px_#FF8419]/50">
+          <button className="flex items-center lg:border-2 border-[#FF8419] bg-[#FF8419] text-[13px] md:text-[14px] lg:text-[17px] gilroy-sb text-white px-4 md:px-7 py-2.5 md:py-3.5 rounded-xl transition duration-300 hover:shadow-[0_0px_18px_#FF8419]/50">
             Start Your Subscription
-            <span className="ml-3 flex items-center">
+            <span className="ml-1 md:ml-3 flex items-center">
               <ArrowRight />
             </span>
           </button>
 
-          <button className="ml-4 md:ml-6 gilroy-sb text-[14px] lg:text-[17px] border-2 border-black text-black px-4 md:px-7  py-2.5 md:py-3.5 rounded-xl  hover:bg-black hover:text-white transition">
+          <button className="ml-4 md:ml-6 gilroy-sb text-[13px] md:text-[14px] lg:text-[17px] border-2 border-black text-black px-4 md:px-7  py-2.5 md:py-3.5 rounded-xl  hover:bg-black hover:text-white transition">
             View Plans
           </button>
         </div>
