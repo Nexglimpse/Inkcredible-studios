@@ -114,22 +114,22 @@ export default function TestimonialsSection() {
   const secondRow = testimonials.slice(3, 6);
 
   return (
-    <section className=" mt-30 ">
-      <div className="mx-auto px-4 sm:px-6 lg:px-1">
-        <div>
+    <section className="mt-15 md:mt-20 lg:mt-30 ">
+      <div className="mx-auto px-1">
+        <div className="px-4.5 md:px-10 xl:px-15">
           <h1 className="text-center text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] gilroy-sb leading-snug text-orange-500">
             TESTIMONIALS
           </h1>
           <h2 className="text-center text-[26px] md:text-[34px] lg:text-[38px] xl:text-[40px] mt-3 gilroy-b leading-snug ">
             What Our Clients Say About Us
           </h2>
-          <p className="text-black text-md max-w-3xl mx-auto lg:text-lg xl:text-xl gilroy-m mt-2 text-center ">
+          <p className="text-black text-md max-w-3xl mx-auto md:text-[18px] lg:text-lg xl:text-xl gilroy-m mt-2 text-center ">
             Don't just take our word for it. Hear what our clients have to say
             about their incredible experience with us.
           </p>
         </div>
 
-        <div className="flex justify-center items-center mt-10">
+        <div className="flex justify-center items-center mt-10 px-4.5 md:px-10 xl:px-15">
           <iframe
             width="700"
             height="350"

@@ -50,14 +50,14 @@ export default function Faq() {
         <h2 className="text-center text-[26px] md:text-[34px] lg:text-[38px] xl:text-[40px] mt-3 gilroy-b leading-snug ">
           Frequently Asked Questions
         </h2>
-        <p className="text-black text-md max-w-3xl mx-auto lg:text-lg xl:text-xl gilroy-m mt-2 text-center ">
+        <p className="text-black text-md max-w-3xl mx-auto md:text-[18px] lg:text-lg xl:text-xl gilroy-m mt-2 text-center ">
           Got questions? We've answered the most common ones to help you get to
           know us even better.
         </p>
       </div>
 
       {/* FAQ Items */}
-      <div className="space-y-4 mt-10 mx-24">
+      <div className="space-y-4 mt-10 lg:mx-24">
         {faqData.map((item) => {
           const isOpen = openItems.has(item.id);
 
@@ -72,7 +72,7 @@ export default function Faq() {
                 className="w-full px-6 py-4 sm:px-8 sm:py-6 text-left flex items-center justify-between group focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded-lg"
                 aria-expanded={isOpen}
               >
-                <span className="gilroy-sb text-sm sm:text-base lg:text-[21px] pr-4 group-hover:text-orange-600 transition-colors duration-200">
+                <span className="gilroy-sb text-sm sm:text-base md:text-[17px] lg:text-[21px] pr-4 group-hover:text-orange-600 transition-colors duration-200">
                   {item.question}
                 </span>
 

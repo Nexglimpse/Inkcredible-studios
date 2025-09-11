@@ -11,7 +11,7 @@ const About = () => {
         <h2 className="text-center lg:text-start text-[26px] md:text-[34px] lg:text-[38px] xl:text-[40px] mt-3 gilroy-b leading-snug ">
           About Inkcredible Studios
         </h2>
-        <p className="text-center lg:text-start text-md md:text-lg xl:text-[20px] mt-3 gilroy-m leading-snug text-black">
+        <p className="text-justify md:text-center lg:text-start text-md md:text-lg xl:text-[20px] mt-3 gilroy-m leading-snug text-black">
           Since 2011, Inkcredible Studios has partnered with U.S. promotional
           product manufacturers, completing 1M+ jobs with precision and speed.
           We specialize in vector artwork, mockups, patches, pins, and
@@ -21,13 +21,13 @@ const About = () => {
           headaches.
         </p>
         <div className="mt-10 flex justify-center lg:justify-start space-x-4 md:space-x-12 lg:space-x-8">
-          <div className="border-r-2 pr-4 xl:pr-10 text-center md:text-start">
+          <div className="border-r md:border-r-2 pr-4 xl:pr-10 text-center md:text-start">
             <h2 className="gilroy-b text-[32px] md:text-[38px] lg:text-[42px] xl:text-5xl">
               15+
             </h2>
             <p className="gilroy-m text-md xl:text-lg">Years of Experience</p>
           </div>
-          <div className="border-r-2 pr-4 xl:pr-10 text-center md:text-start">
+          <div className="border-r md:border-r-2 pr-4 xl:pr-10 text-center md:text-start">
             <h2 className="gilroy-b text-[32px] md:text-[38px] lg:text-[42px] xl:text-5xl">
               500+
             </h2>
