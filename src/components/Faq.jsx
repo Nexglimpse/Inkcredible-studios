@@ -103,7 +103,7 @@ export default function Faq() {
               >
                 <div className="px-6 pb-4 sm:px-8 sm:pb-6">
                   <div className="pt-2 border-t border-gray-100">
-                    <p className="gilroy-m text-lg leading-relaxed mt-3">
+                    <p className="gilroy-m text-[14px] md:text-lg leading-relaxed mt-3">
                       {item.answer}
                     </p>
                   </div>
