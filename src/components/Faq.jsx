@@ -42,7 +42,10 @@ export default function Faq() {
   };
 
   return (
-    <section className="w-full px-4.5 md:px-10 xl:px-15 mt-15 md:mt-20 lg:mt-30 ">
+    <section
+      className="w-full px-4.5 md:px-10 xl:px-15 mt-15 md:mt-20 lg:mt-30 "
+      id="faq"
+    >
       <div>
         <h1 className="text-center text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] gilroy-sb leading-snug text-orange-500">
           FAQs

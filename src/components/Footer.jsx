@@ -2,7 +2,10 @@ import { Instagram, Facebook, Linkedin } from "lucide-react";
 import Icon from "../assets/images/logo-icon.png";
 export default function Footer() {
   return (
-    <footer className="bg-black text-white px-10 mx-1 mb-1 rounded-xl mt-30 ">
+    <footer
+      className="bg-black text-white px-10 mx-1 mb-1 rounded-xl mt-30 "
+      id="footer"
+    >
       <div className="container mx-auto px-4 py-8 lg:py-12">
         {/* Main footer content */}
         <div className="relative flex flex-col md:flex-row md:justify-between md:items-start gap-8">

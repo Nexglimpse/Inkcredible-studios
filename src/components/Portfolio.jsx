@@ -2,7 +2,10 @@ import React from "react";
 
 const Portfolio = () => {
   return (
-    <section className="mt-15 md:mt-20 lg:mt-30 px-4.5 md:px-10 xl:px-15">
+    <section
+      className="mt-15 md:mt-20 lg:mt-30 px-4.5 md:px-10 xl:px-15"
+      id="portfolio"
+    >
       <div>
         <h1 className="text-center text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] gilroy-sb leading-snug text-orange-500">
           PORFOLIO

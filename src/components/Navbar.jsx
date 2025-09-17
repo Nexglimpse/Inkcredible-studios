@@ -42,19 +42,19 @@ const Navbar = () => {
         <div className="hidden lg:block">
           <ul className="flex gap-1 xl:gap-4">
             <li className="inline-block text-white text-[15px] gilroy-m mx-6 hover:text-[#FE9E49] transition cursor-pointer">
-              About Us
+              <a href="#about">About Us</a>
             </li>
             <li className="inline-block text-white text-[15px] gilroy-m mx-6 hover:text-[#FE9E49] transition cursor-pointer">
-              Why Us
+              <a href="#whyUs"> Why Us</a>
             </li>
             <li className="inline-block text-white text-[15px] gilroy-m mx-6 hover:text-[#FE9E49] transition cursor-pointer">
-              Pricing
+              <a href="#pricing">Pricing</a>
             </li>
             <li className="inline-block text-white text-[15px] gilroy-m mx-6 hover:text-[#FE9E49] transition cursor-pointer">
-              Portfolio
+              <a href="#portfolio">Portfolio</a>
             </li>
             <li className="inline-block text-white text-[15px] gilroy-m mx-6 hover:text-[#FE9E49] transition cursor-pointer">
-              Testimonials
+              <a href="#testimonials">Testimonials</a>
             </li>
           </ul>
         </div>
@@ -140,7 +140,7 @@ const Navbar = () => {
             <ul className="space-y-6">
               <li>
                 <a
-                  href="#"
+                  href="#about"
                   className="block text-white text-lg gilroy-m hover:text-[#FE9E49] transition-colors duration-200 py-2"
                   onClick={toggleMenu}
                 >
@@ -149,7 +149,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#whyUs"
                   className="block text-white text-lg gilroy-m hover:text-[#FE9E49] transition-colors duration-200 py-2"
                   onClick={toggleMenu}
                 >
@@ -158,7 +158,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#pricing"
                   className="block text-white text-lg gilroy-m hover:text-[#FE9E49] transition-colors duration-200 py-2"
                   onClick={toggleMenu}
                 >
@@ -167,7 +167,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#portfolio"
                   className="block text-white text-lg gilroy-m hover:text-[#FE9E49] transition-colors duration-200 py-2"
                   onClick={toggleMenu}
                 >
@@ -176,7 +176,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#testimonials"
                   className="block text-white text-lg gilroy-m hover:text-[#FE9E49] transition-colors duration-200 py-2"
                   onClick={toggleMenu}
                 >

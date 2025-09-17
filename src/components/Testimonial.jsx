@@ -114,7 +114,7 @@ export default function TestimonialsSection() {
   const secondRow = testimonials.slice(3, 6);
 
   return (
-    <section className="mt-15 md:mt-20 lg:mt-30 ">
+    <section className="mt-15 md:mt-20 lg:mt-30 " id="testimonials">
       <div className="mx-auto px-1">
         <div className="px-4.5 md:px-10 xl:px-15">
           <h1 className="text-center text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] gilroy-sb leading-snug text-orange-500">
