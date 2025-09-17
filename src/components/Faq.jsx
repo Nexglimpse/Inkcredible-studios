@@ -75,7 +75,7 @@ export default function Faq() {
                 className="w-full px-6 py-4 sm:px-8 sm:py-6 text-left flex items-center justify-between group focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded-lg"
                 aria-expanded={isOpen}
               >
-                <span className="gilroy-sb text-sm sm:text-base md:text-[17px] lg:text-[21px] pr-4 group-hover:text-orange-600 transition-colors duration-200">
+                <span className="gilroy-sb text-[16px] sm:text-base md:text-[17px] lg:text-[21px] pr-4 group-hover:text-orange-600 transition-colors duration-200">
                   {item.question}
                 </span>
 

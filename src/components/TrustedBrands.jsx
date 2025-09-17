@@ -45,11 +45,11 @@ const TrustedBrands = () => {
         </div>
 
         <div className="md:hidden mt-10 flex flex-col space-y-12">
-          <div className="flex justify-center items-center space-x-22 md:space-x-34">
+          <div className="flex justify-center items-center space-x-18 md:space-x-34">
             <img className="w-[120px] md:w-[130px]" src={Disney} alt="" />
             <img className="w-[120px] md:w-[130px]" src={Harley} alt="" />
           </div>
-          <div className="flex justify-center items-center space-x-22 md:space-x-34">
+          <div className="flex justify-center items-center space-x-18 md:space-x-34">
             <img className="w-[120px] md:w-[130px]" src={HardRock} alt="" />
             <img className="w-[120px] md:w-[130px]" src={Universal} alt="" />
           </div>
