@@ -19,12 +19,15 @@ const Navbar = () => {
           Start saving $4000/month!
         </h2>
         <div className="flex items-center justify-center space-x-0">
-          <button className="bg-black text-[10px] md:text-[12px] lg:text-[15px] gilroy-sb border-2 border-black text-white px-2.5 sm:px-4 md:px-7 py-1.5 md:pb-2 rounded-full  transition">
+          <a className="bg-black text-[10px] md:text-[12px] lg:text-[15px] gilroy-sb border-2 border-black text-white px-2.5 sm:px-4 md:px-7 py-1.5 md:pb-2 rounded-full  transition">
             Get Started
-          </button>
-          <button className="ml-1.5 md:ml-4 gilroy-sb text-[10px] md:text-[12px] lg:text-[15px] border-2 border-black text-black px-2.5 sm:px-4 md:px-7 py-1.5 md:pb-2 rounded-full hover:bg-black hover:text-white transition">
+          </a>
+          <a
+            href="#pricing"
+            className="ml-1.5 md:ml-4 gilroy-sb text-[10px] md:text-[12px] lg:text-[15px] border-2 border-black text-black px-2.5 sm:px-4 md:px-7 py-1.5 md:pb-2 rounded-full hover:bg-black hover:text-white transition"
+          >
             View Plans
-          </button>
+          </a>
         </div>
       </div>
       {/* End of top notification bar */}

@@ -32,6 +32,9 @@
 * {
   scroll-behavior: smooth;
 }
+section {
+  scroll-margin-top: 150px;
+}
 
 /* ✅ Custom classes for Gilroy font */
 .gilroy-r {
