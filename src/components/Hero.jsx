@@ -4,11 +4,12 @@ import Disney from "../assets/images/disney.png";
 import Harley from "../assets/images/harley.png";
 import HardRock from "../assets/images/hard-rock.png";
 import Universal from "../assets/images/universal.png";
+import Vid from "../assets/videos/vid.webm";
 
 const Hero = () => {
   return (
-    <div className="h-screen bg-[linear-gradient(0deg,_#ffffff_30%,_rgba(255,203,142,0.66)_100%)]">
-      <div className="lg:w-1/2 px-4.5 md:px-10 lg:px-0 lg:pl-10 xl:pl-15">
+    <div className="flex justify-between min-h-[calc(100vh-120px)] bg-[linear-gradient(0deg,_#ffffff_30%,_rgba(255,203,142,0.66)_100%)] px-4.5 md:px-10 lg:px-0 lg:pl-10 xl:pl-15">
+      <div className="lg:w-1/2 ">
         <h1 className="text-center lg:text-start text-[30px] md:text-[40px] lg:text-[40px] xl:text-[52px] pt-12 md:pt-20 gilroy-b leading-snug">
           Subscription That Saves You $4000 a Month !
         </h1>
@@ -20,16 +21,22 @@ const Hero = () => {
         </h2>
 
         <div className="flex items-center justify-center lg:justify-start mt-13">
-          <button className="flex items-center lg:border-2 border-[#FF8419] bg-[#FF8419] text-[13px] md:text-[14px] lg:text-[17px] gilroy-sb text-white px-4 md:px-7 py-2.5 md:py-3.5 rounded-xl transition duration-300 hover:shadow-[0_0px_18px_#FF8419]/50">
+          <a
+            href="#pricing"
+            className="flex items-center lg:border-2 border-[#FF8419] bg-[#FF8419] text-[13px] md:text-[14px] lg:text-[17px] gilroy-sb text-white px-4 md:px-7 py-2.5 md:py-3.5 rounded-xl transition duration-300 hover:shadow-[0_0px_18px_#FF8419]/50"
+          >
             Start Your Subscription
             <span className="ml-1 md:ml-3 flex items-center">
               <ArrowRight />
             </span>
-          </button>
+          </a>
 
-          <button className="ml-4 md:ml-6 gilroy-sb text-[13px] md:text-[14px] lg:text-[17px] border-2 border-black text-black px-4 md:px-7  py-2.5 md:py-3.5 rounded-xl  hover:bg-black hover:text-white transition">
-            View Plans
-          </button>
+          <a
+            href="#portfolio"
+            className="ml-4 md:ml-6 gilroy-sb text-[13px] md:text-[14px] lg:text-[17px] border-2 border-black text-black px-4 md:px-7  py-2.5 md:py-3.5 rounded-xl  hover:bg-black hover:text-white transition"
+          >
+            View Works
+          </a>
         </div>
 
         <div className="mt-10 flex flex-col justify-center items-center lg:items-start">
@@ -80,6 +87,16 @@ const Hero = () => {
             </div>
           </div>
         </div>
+      </div>
+
+      <div className="w-1/2 flex justify-center items-start pt-12 md:pt-20 ">
+        {/* <video
+          className="w-[500px] h-[500px]"
+          src={Vid}
+          autoPlay
+          muted
+          loop
+        ></video> */}
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ import Portfolio from "./components/Portfolio";
 import Testimonial from "./components/Testimonial";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
+import YourPlan from "./components/YourPlan";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       {/* </div> */}
       <About />
       <WhyUs />
+      <YourPlan />
       <Pricing />
       <TrustedBrands />
       <Portfolio />

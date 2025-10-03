@@ -21,37 +21,39 @@ const TrustedBrands = () => {
           </p>
         </div>
 
-        <div className="hidden md:flex mt-17 justify-between items-center px-15 lg:px-18 xl:px-30">
-          <img
-            className="w-[125px] lg:w-[150px] xl:w-[170px]"
-            src={Disney}
-            alt=""
-          />
-          <img
-            className="w-[125px] lg:w-[150px] xl:w-[170px]"
-            src={Harley}
-            alt=""
-          />
-          <img
-            className="w-[125px] lg:w-[150px] xl:w-[170px]"
-            src={HardRock}
-            alt=""
-          />
-          <img
-            className="w-[125px] lg:w-[150px] xl:w-[170px]"
-            src={Universal}
-            alt=""
-          />
-        </div>
-
-        <div className="md:hidden mt-10 flex flex-col space-y-12">
-          <div className="flex justify-center items-center space-x-18 md:space-x-34">
-            <img className="w-[120px] md:w-[130px]" src={Disney} alt="" />
-            <img className="w-[120px] md:w-[130px]" src={Harley} alt="" />
+        <div className="container mx-auto">
+          <div className=" hidden md:flex mt-17 justify-between items-center px-15 lg:px-18 xl:px-30">
+            <img
+              className="w-[125px] lg:w-[150px] xl:w-[170px]"
+              src={Disney}
+              alt=""
+            />
+            <img
+              className="w-[125px] lg:w-[150px] xl:w-[170px]"
+              src={Harley}
+              alt=""
+            />
+            <img
+              className="w-[125px] lg:w-[150px] xl:w-[170px]"
+              src={HardRock}
+              alt=""
+            />
+            <img
+              className="w-[125px] lg:w-[150px] xl:w-[170px]"
+              src={Universal}
+              alt=""
+            />
           </div>
-          <div className="flex justify-center items-center space-x-18 md:space-x-34">
-            <img className="w-[120px] md:w-[130px]" src={HardRock} alt="" />
-            <img className="w-[120px] md:w-[130px]" src={Universal} alt="" />
+
+          <div className="md:hidden mt-10 flex flex-col space-y-12">
+            <div className="flex justify-center items-center space-x-18 md:space-x-34">
+              <img className="w-[120px] md:w-[130px]" src={Disney} alt="" />
+              <img className="w-[120px] md:w-[130px]" src={Harley} alt="" />
+            </div>
+            <div className="flex justify-center items-center space-x-18 md:space-x-34">
+              <img className="w-[120px] md:w-[130px]" src={HardRock} alt="" />
+              <img className="w-[120px] md:w-[130px]" src={Universal} alt="" />
+            </div>
           </div>
         </div>
       </div>

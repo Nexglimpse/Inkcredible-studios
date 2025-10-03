@@ -19,14 +19,17 @@ const Navbar = () => {
           Start saving $4000/month!
         </h2>
         <div className="flex items-center justify-center space-x-0">
-          <a className="bg-black text-[10px] md:text-[12px] lg:text-[15px] gilroy-sb border-2 border-black text-white px-2.5 sm:px-4 md:px-7 py-1.5 md:pb-2 rounded-full  transition">
+          <a
+            href="#pricing"
+            className="bg-black text-[10px] md:text-[12px] lg:text-[15px] gilroy-sb border-2 border-black text-white px-2.5 sm:px-4 md:px-7 py-1.5 md:pb-2 rounded-full  transition"
+          >
             Get Started
           </a>
           <a
-            href="#pricing"
+            href="#portfolio"
             className="ml-1.5 md:ml-4 gilroy-sb text-[10px] md:text-[12px] lg:text-[15px] border-2 border-black text-black px-2.5 sm:px-4 md:px-7 py-1.5 md:pb-2 rounded-full hover:bg-black hover:text-white transition"
           >
-            View Plans
+            View Works
           </a>
         </div>
       </div>
@@ -64,9 +67,12 @@ const Navbar = () => {
 
         {/* Desktop Get Started Button */}
         <div className="hidden lg:block">
-          <button className="bg-[#FF8419] text-md gilroy-sb text-white px-7 py-2.5 pb-3 rounded-xl transition duration-300 hover:shadow-[0_0px_18px_#FF8419]/60">
+          <a
+            href="#pricing"
+            className="bg-[#FF8419] text-md gilroy-sb text-white px-7 py-2.5 pb-3 rounded-xl transition duration-300 hover:shadow-[0_0px_18px_#FF8419]/60"
+          >
             Get Started
-          </button>
+          </a>
         </div>
 
         {/* Mobile Hamburger Menu Button */}
@@ -190,12 +196,13 @@ const Navbar = () => {
 
             {/* Mobile Get Started Button */}
             <div className="mt-8 pt-6 border-t border-gray-800">
-              <button
+              <a
+                href="#pricing"
                 className="w-full bg-[#FF8419] text-lg gilroy-sb text-white py-3 rounded-xl hover:bg-orange-500 transition-colors duration-200"
                 onClick={toggleMenu}
               >
                 Get Started
-              </button>
+              </a>
             </div>
           </div>
         </div>

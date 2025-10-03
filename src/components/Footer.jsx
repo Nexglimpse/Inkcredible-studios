@@ -83,7 +83,9 @@ export default function Footer() {
           </p>
           <p>
             Designed & Developed By{" "}
-            <span className="text-white gilroy-m">Nexglimpse</span>
+            <a href="https://nexglimpse.com" className="text-white gilroy-m">
+              Nexglimpse
+            </a>
           </p>
         </div>
       </div>

@@ -6,61 +6,66 @@ const pricingData = {
   "Vector Service": {
     weekly: {
       originalPrice: "$499",
-      price: "$399",
+      price: "$375",
       period: "per week",
-      description: "Perfect for basic design needs",
+      description: "Best for the teams with small weekly volumes",
       credits: "100 job credits per month",
       turnaround: "Turn around time 2 hours",
       features: [
-        "100 job credits per month",
-        "Turn around time 2 hours",
-        "Dedicated designer",
-        "24/6 support",
+        "500 job credits per month",
+        "Personal artwork Portal Access",
+        "Secure Storage",
+        "2 Free Revisions per Job",
+        "Complex Jobs - Quotation-based",
       ],
     },
     monthly: {
-      originalPrice: "$1199",
-      price: "$999",
+      originalPrice: "$1899",
+      price: "$1699",
       period: "per month",
-      description: "Perfect for manufacturers",
+      description: "Best for the high-volume users seeking best value",
       credits: "500 job credits per month",
       turnaround: "Turn around time 2 hours",
       features: [
-        "500 job credits per month",
-        "Turn around time 2 hours",
-        "Dedicated designer",
-        "24/6 support",
+        "500 Jobs, 100 More than Weekly",
+        "Personal artwork Portal Access",
+        "Secure Storage",
+        "Unlimited Revisions per Job",
+        "Includes up to 5 complex jobs",
+        "Save $175 compared to 4 Weekly Plans",
       ],
     },
   },
   "Template Placement": {
     weekly: {
-      originalPrice: "$399",
-      price: "$299",
+      originalPrice: "$599",
+      price: "$499",
       period: "per week",
-      description: "Perfect for template customization",
-      credits: "50 template placements per month",
+      description: "Best for the teams with small weekly volumes",
+      credits: "125 job credits per month",
       turnaround: "Turn around time 1 hour",
       features: [
-        "50 template placements per month",
-        "Turn around time 1 hour",
-        "Template library access",
-        "Priority support",
+        "500 job credits per month",
+        "Personal artwork Portal Access",
+        "Secure Storage",
+        "2 Free Revisions per Job",
+        "Complex Jobs - Quotation-based",
       ],
     },
     monthly: {
-      originalPrice: "$999",
-      price: "$799",
+      originalPrice: "$2199",
+      price: "$1999",
       period: "per month",
-      description: "Perfect for high-volume placement",
+      description: "Best for the high-volume users seeking best value",
       credits: "300 template placements per month",
       turnaround: "Turn around time 1 hour",
       features: [
-        "300 template placements per month",
-        "Turn around time 1 hour",
-        "Template library access",
-        "Priority support",
-        "Custom templates",
+        "600 Jobs, 100 More than Weekly",
+        "Personal artwork Portal Access",
+        "Secure Storage",
+        "Unlimited Revisions per Job",
+        "Includes up to 5 complex jobs",
+        "Save $400 compared to 4 Weekly Plans",
       ],
     },
   },
@@ -69,31 +74,31 @@ const pricingData = {
       originalPrice: "$699",
       price: "$599",
       period: "per week",
-      description: "Perfect for production workflows",
-      credits: "25 production packages per month",
+      description: "Best for the teams with small weekly volumes",
+      credits: "50 job credits per month",
       turnaround: "Turn around time 4 hours",
       features: [
-        "25 production packages per month",
-        "Turn around time 4 hours",
-        "Quality assurance",
-        "Production files",
-        "Revision rounds",
+        "50 job credits per month",
+        "Personal artwork Portal Access",
+        "Secure Storage",
+        "2 Free Revisions per Job",
+        "Complex Jobs - Quotation-based",
       ],
     },
     monthly: {
-      originalPrice: "$1999",
-      price: "$1599",
+      originalPrice: "$3299",
+      price: "$2999",
       period: "per month",
-      description: "Perfect for enterprise production",
+      description: "Best for the high-volume users seeking best value",
       credits: "150 production packages per month",
       turnaround: "Turn around time 4 hours",
       features: [
-        "150 production packages per month",
-        "Turn around time 4 hours",
-        "Quality assurance",
-        "Production files",
-        "Unlimited revisions",
-        "Account manager",
+        "300 Jobs, 100 More than Weekly",
+        "Personal artwork Portal Access",
+        "Secure Storage",
+        "Unlimited Revisions per Job",
+        "Includes up to 5 complex jobs",
+        "Save $600 compared to 4 Weekly Plans",
       ],
     },
   },
@@ -152,7 +157,7 @@ const Pricing = () => {
             ))}
           </div>
         </div> */}
-        <div className="flex justify-center mb-7 md:mb-10 lg:mb-14">
+        <div className="flex justify-center mb-4 md:mb-5 lg:mb-7">
           <div className="md:text-md md:flex border border-gray-200 rounded-lg p-1 relative overflow-hidden">
             <button
               onClick={() => setActiveTab("Vector Service")}
@@ -188,104 +193,106 @@ const Pricing = () => {
         </div>
 
         {/* Pricing Cards */}
-        <div
-          key={activeTab}
-          className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto animate-in fade-in duration-500"
-        >
-          {/* Weekly Plan */}
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm transform transition-all duration-300 hover:shadow-md">
-            <h3 className="gilroy-b text-lg lg:text-xl font-semibold text-gray-900 mb-4 lg:mb-6">
-              Weekly Plan
-            </h3>
+        <div key={activeTab}>
+          <p className="text-black text-md max-w-3xl mx-auto md:text-[18px] lg:text-lg xl:text-xl gilroy-sb mt-2 text-center mb-5 md:mb-7 lg:mb-10 ">
+            Ideal for Distributors Needing Clean Vector Files
+          </p>
+          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto animate-in fade-in duration-500">
+            {/* Weekly Plan */}
+            <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm transform transition-all duration-300 hover:shadow-md">
+              <h3 className="gilroy-b text-lg lg:text-xl font-semibold text-gray-900 mb-4 lg:mb-6">
+                Weekly Plan
+              </h3>
 
-            <div className="mb-6">
-              <div className="flex items-baseline">
-                <span className="text-lg lg:text-xl gilroy-sb text-gray-700 line-through mr-1">
-                  {currentData.weekly.originalPrice}
-                </span>
-                <span className="text-3xl lg:text-[34px] mr-1 gilroy-sb">
-                  $
-                </span>
-                <span className="text-3xl lg:text-[34px] font-bold text-gray-900 gilroy-sb">
-                  {currentData.weekly.price.replace("$", "")}
-                </span>
-                <span className="text-gray-700 ml-2 gilroy-sb text-md lg:text-lg">
-                  {currentData.weekly.period}
+              <div className="mb-6">
+                <div className="flex items-baseline">
+                  <span className="text-lg lg:text-xl gilroy-sb text-gray-700 line-through mr-1">
+                    {currentData.weekly.originalPrice}
+                  </span>
+                  <span className="text-3xl lg:text-[34px] mr-1 gilroy-sb">
+                    $
+                  </span>
+                  <span className="text-3xl lg:text-[34px] font-bold text-gray-900 gilroy-sb">
+                    {currentData.weekly.price.replace("$", "")}
+                  </span>
+                  <span className="text-gray-700 ml-2 gilroy-sb text-md lg:text-lg">
+                    {currentData.weekly.period}
+                  </span>
+                </div>
+                <p className="text-black mt-2 gilroy-sb">
+                  {currentData.weekly.description}
+                </p>
+              </div>
+
+              <button className="w-full gilroy-sb border py-3 px-6 rounded-full font-medium hover:bg-[#FF8419] hover:border-[#FF8419] hover:text-white transition-all duration-300 mb-8">
+                Choose Subscription
+              </button>
+
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-4 gilroy-sb">
+                  Features
+                </h4>
+                <ul className="space-y-3 gilroy-m">
+                  {currentData.weekly.features.map((feature, index) => (
+                    <li key={index} className="flex items-center">
+                      <Check className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
+                      <span className="text-gray-800">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Monthly Plan - Popular */}
+            <div className="bg-white border-2 border-orange-500 rounded-2xl p-8 shadow-sm relative transform transition-all duration-300 hover:shadow-lg">
+              {/* Popular Badge */}
+              <div className="absolute -top-5 left-1/2 transform -translate-x-1/2">
+                <span className="flex justify-center items-center gap-1 bg-orange-500 text-white px-6 py-2 rounded-full text-sm font-medium">
+                  <Sparkles size={16} /> Popular Plan
                 </span>
               </div>
-              <p className="text-black mt-2 gilroy-sb">
-                {currentData.weekly.description}
-              </p>
-            </div>
 
-            <button className="w-full gilroy-sb border py-3 px-6 rounded-full font-medium hover:bg-[#FF8419] hover:border-[#FF8419] hover:text-white transition-all duration-300 mb-8">
-              Choose Subscription
-            </button>
+              <h3 className="gilroy-b text-lg lg:text-xl font-semibold text-gray-900 mb-4 lg:mb-6">
+                Monthly Plan
+              </h3>
 
-            <div>
-              <h4 className="font-semibold text-gray-900 mb-4 gilroy-sb">
-                Features
-              </h4>
-              <ul className="space-y-3 gilroy-m">
-                {currentData.weekly.features.map((feature, index) => (
-                  <li key={index} className="flex items-center">
-                    <Check className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
-                    <span className="text-gray-800">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-
-          {/* Monthly Plan - Popular */}
-          <div className="bg-white border-2 border-orange-500 rounded-2xl p-8 shadow-sm relative transform transition-all duration-300 hover:shadow-lg">
-            {/* Popular Badge */}
-            <div className="absolute -top-5 left-1/2 transform -translate-x-1/2">
-              <span className="flex justify-center items-center gap-1 bg-orange-500 text-white px-6 py-2 rounded-full text-sm font-medium">
-                <Sparkles size={16} /> Popular Plan
-              </span>
-            </div>
-
-            <h3 className="gilroy-b text-lg lg:text-xl font-semibold text-gray-900 mb-4 lg:mb-6">
-              Monthly Plan
-            </h3>
-
-            <div className="mb-6">
-              <div className="flex items-baseline">
-                <span className="text-lg lg:text-xl gilroy-sb text-gray-700 line-through mr-1">
-                  {currentData.monthly.originalPrice}
-                </span>
-                <span className="text-3xl lg:text-[34px] mr-1 gilroy-sb">
-                  $
-                </span>
-                <span className="text-3xl lg:text-[34px] font-bold text-gray-900 gilroy-sb">
-                  {currentData.monthly.price.replace("$", "")}
-                </span>
-                <span className="text-gray-700 ml-2 gilroy-sb text-md lg:text-lg">
-                  {currentData.monthly.period}
-                </span>
+              <div className="mb-6">
+                <div className="flex items-baseline">
+                  <span className="text-lg lg:text-xl gilroy-sb text-gray-700 line-through mr-1">
+                    {currentData.monthly.originalPrice}
+                  </span>
+                  <span className="text-3xl lg:text-[34px] mr-1 gilroy-sb">
+                    $
+                  </span>
+                  <span className="text-3xl lg:text-[34px] font-bold text-gray-900 gilroy-sb">
+                    {currentData.monthly.price.replace("$", "")}
+                  </span>
+                  <span className="text-gray-700 ml-2 gilroy-sb text-md lg:text-lg">
+                    {currentData.monthly.period}
+                  </span>
+                </div>
+                <p className="text-black mt-2 gilroy-sb">
+                  {currentData.monthly.description}
+                </p>
               </div>
-              <p className="text-black mt-2 gilroy-sb">
-                {currentData.monthly.description}
-              </p>
-            </div>
 
-            <button className="gilroy-sb w-full bg-orange-500 text-white py-3 px-6 rounded-full font-medium hover:bg-orange-600 transition-all duration-300 mb-8">
-              Choose Subscription
-            </button>
+              <button className="gilroy-sb w-full border-[#FF8419] bg-[#FF8419]  hover:shadow-[0_0px_18px_#FF8419]/50 text-white py-3 px-6 rounded-full font-medium transition-all duration-300 mb-8">
+                Choose Subscription
+              </button>
 
-            <div>
-              <h4 className="font-semibold text-gray-900 mb-4 gilroy-sb">
-                Features
-              </h4>
-              <ul className="space-y-3 gilroy-m">
-                {currentData.monthly.features.map((feature, index) => (
-                  <li key={index} className="flex items-center">
-                    <Check className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
-                    <span className="text-gray-800">{feature}</span>
-                  </li>
-                ))}
-              </ul>
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-4 gilroy-sb">
+                  Features
+                </h4>
+                <ul className="space-y-3 gilroy-m">
+                  {currentData.monthly.features.map((feature, index) => (
+                    <li key={index} className="flex items-center">
+                      <Check className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
+                      <span className="text-gray-800">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>

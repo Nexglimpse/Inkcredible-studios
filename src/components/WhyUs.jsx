@@ -24,7 +24,7 @@ const WhyUs = () => {
           </p>
         </div>
 
-        <div className="container mx-auto mt-10">
+        <div className="container w-full mx-auto mt-10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_1.5fr_1fr] gap-4">
             {/* Column 1 */}
             <div className="flex flex-col gap-4">
@@ -79,10 +79,12 @@ const WhyUs = () => {
                   />
                 </div>
                 <button className="hidden lg:flex gilroy-sb text-md text-white bg-black px-6 py-3 rounded-xl md:text-md xl:text-md ">
-                  <span className="xl:hidden">Get Started</span>{" "}
-                  <span className="hidden xl:flex">
+                  <a href="#pricing" className="xl:hidden">
+                    Get Started
+                  </a>{" "}
+                  <a href="#pricing" className="hidden xl:flex">
                     Start Your Subscription
-                  </span>
+                  </a>
                   <span className="ml-2">
                     <ArrowRight />
                   </span>
