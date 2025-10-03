@@ -4,6 +4,7 @@ import { Check, Sparkles } from "lucide-react";
 
 const pricingData = {
   "Vector Service": {
+    description: "Ideal for Distributors Needing Clean Vector Files",
     weekly: {
       originalPrice: "$499",
       price: "$375",
@@ -37,6 +38,8 @@ const pricingData = {
     },
   },
   "Template Placement": {
+    description:
+      "Best for Teams That Need Artwork Placed on Templates for Production",
     weekly: {
       originalPrice: "$599",
       price: "$499",
@@ -70,6 +73,8 @@ const pricingData = {
     },
   },
   "Production Ready Package": {
+    description:
+      "Perfect for High-Volume Distributors Producing Custom Awards, Pins, and More",
     weekly: {
       originalPrice: "$699",
       price: "$599",
@@ -161,7 +166,7 @@ const Pricing = () => {
           <div className="md:text-md md:flex border border-gray-200 rounded-lg p-1 relative overflow-hidden">
             <button
               onClick={() => setActiveTab("Vector Service")}
-              className={`w-full md:w-fit gilroy-m px-6 py-2 ${
+              className={`w-full md:w-fit gilroy-m px-6 py-2 cursor-pointer ${
                 activeTab == "Vector Service"
                   ? "bg-orange-500 text-white"
                   : "text-black"
@@ -171,7 +176,7 @@ const Pricing = () => {
             </button>
             <button
               onClick={() => setActiveTab("Template Placement")}
-              className={`w-full md:w-fit gilroy-m px-6 py-2 ${
+              className={`w-full md:w-fit gilroy-m px-6 py-2 cursor-pointer ${
                 activeTab == "Template Placement"
                   ? "bg-orange-500 text-white"
                   : "text-black"
@@ -181,7 +186,7 @@ const Pricing = () => {
             </button>
             <button
               onClick={() => setActiveTab("Production Ready Package")}
-              className={`w-full md:w-fit gilroy-m px-6 py-2 ${
+              className={`w-full md:w-fit gilroy-m px-6 py-2 cursor-pointer ${
                 activeTab == "Production Ready Package"
                   ? "bg-orange-500 text-white"
                   : "text-black"
@@ -194,8 +199,9 @@ const Pricing = () => {
 
         {/* Pricing Cards */}
         <div key={activeTab}>
-          <p className="text-black text-md max-w-3xl mx-auto md:text-[18px] lg:text-lg xl:text-xl gilroy-sb mt-2 text-center mb-5 md:mb-7 lg:mb-10 ">
-            Ideal for Distributors Needing Clean Vector Files
+          <p className="text-black text-md max-w-3xl mx-auto md:text-[18px] lg:text-lg  gilroy-m mt-2 text-center mb-7 md:mb-9 lg:mb-13 ">
+            {/* Ideal for Distributors Needing Clean Vector Files */}
+            {currentData.description}
           </p>
           <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto animate-in fade-in duration-500">
             {/* Weekly Plan */}
