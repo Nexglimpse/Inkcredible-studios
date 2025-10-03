@@ -8,7 +8,7 @@ import Vid from "../assets/videos/vid.webm";
 
 const Hero = () => {
   return (
-    <div className="flex justify-between min-h-[calc(100vh-120px)] bg-[linear-gradient(0deg,_#ffffff_30%,_rgba(255,203,142,0.66)_100%)] px-4.5 md:px-10 lg:px-0 lg:pl-10 xl:pl-15">
+    <div className="flex justify-between min-h-[calc(100vh-120px)] bg-[linear-gradient(0deg,_#ffffff_30%,_rgba(255,203,142,0.66)_100%)] px-2 md:px-10 lg:px-0 lg:pl-10 xl:pl-15">
       <div className="lg:w-1/2 ">
         <h1 className="text-center lg:text-start text-[30px] md:text-[40px] lg:text-[40px] xl:text-[52px] pt-12 md:pt-20 gilroy-b leading-snug">
           Subscription That Saves You $4000 a Month !

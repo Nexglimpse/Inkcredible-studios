@@ -20,7 +20,7 @@ const YourPlan = () => {
 
         <div className="container w-full mx-auto mt-10">
           <div className="flex flex-col md:flex-row gap-4">
-            <div className="bg-purple-300 p-6 rounded-2xl h-[250px] lg:h-[285px] relative  overflow-hidden lg:w-1/3">
+            <div className="bg-purple-300 p-6 rounded-2xl h-[270px] lg:h-[285px] relative  overflow-hidden lg:w-1/3">
               <div className="flex items-center gap-3 mb-3">
                 <div className="rounded-full bg-black w-10 h-10 flex items-center justify-center">
                   <h3 className="gilroy-b text-[20px] md:text-[22px] xl:text-[27px] text-white w-fit ">
@@ -39,7 +39,7 @@ const YourPlan = () => {
                 so it’s ready for proofs, templates, or production
               </p>
             </div>
-            <div className="bg-orange-300 p-6 rounded-2xl h-[250px] lg:h-[285px] relative  overflow-hidden lg:w-1/3">
+            <div className="bg-orange-300 p-6 rounded-2xl h-[270px] lg:h-[285px] relative  overflow-hidden lg:w-1/3">
               <div className="flex justify-center items-start gap-3 mb-3">
                 <div className="rounded-full bg-black min-w-10 h-10 flex items-center justify-center mt-0.5">
                   <h3 className="gilroy-b text-[20px] md:text-[22px] xl:text-[27px] text-white w-fit ">
@@ -59,7 +59,7 @@ const YourPlan = () => {
                 production.
               </p>
             </div>
-            <div className="bg-green-300 p-6 rounded-2xl h-[250px] lg:h-[285px] relative  overflow-hidden lg:w-1/3">
+            <div className="bg-green-300 p-6 rounded-2xl h-[270px] lg:h-[285px] relative  overflow-hidden lg:w-1/3">
               <div className="flex items-center gap-3 mb-3">
                 <div className="rounded-full bg-black w-10 h-10 flex items-center justify-center">
                   <h3 className="gilroy-b text-[20px] md:text-[22px] xl:text-[27px] text-white w-fit ">
