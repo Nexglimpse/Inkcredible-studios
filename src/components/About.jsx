@@ -3,9 +3,12 @@ import Ppai from "../assets/images/ppai.png";
 import Asi from "../assets/images/asi.png";
 const About = () => {
   return (
-    <section id="about">
-      <div className="">
-        <div className="mt-15 md:mt-20 lg:mt-30 px-4.5 md:px-10 xl:px-15 lg:flex justify-start">
+    <section
+      id="about"
+      className="flex justify-center items-center px-4.5 md:px-10 xl:px-15 "
+    >
+      <div className="container ">
+        <div className="mt-15 md:mt-20 lg:mt-30 lg:flex justify-start">
           <div className="lg:w-1/2 ">
             <h1 className="text-center lg:text-start text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] gilroy-sb leading-snug text-orange-500">
               ABOUT US
