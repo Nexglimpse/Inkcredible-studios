@@ -71,7 +71,7 @@ export default function Contact() {
                     href="tel:1234567890"
                     className="text-black text-lg hover:text-orange-400 transition-colors gilroy-m"
                   >
-                    (123) 456-7890
+                    +1 (878) 656 9730
                   </a>
                 </div>
 
@@ -124,13 +124,6 @@ export default function Contact() {
                     <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
                   </svg>
                 </a>
-                {/* <a
-                  href="#"
-                  className="w-10 h-10 rounded-full border border-black/80 flex items-center justify-center hover:bg-orange-400 hover:border-orange-400 hover:text-black transition-all"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="w-4 h-4" />
-                </a> */}
               </div>
             </div>
 
