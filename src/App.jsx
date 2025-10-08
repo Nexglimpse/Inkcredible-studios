@@ -10,6 +10,7 @@ import Testimonial from "./components/Testimonial";
 import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import YourPlan from "./components/YourPlan";
+import Contact from "./components/Contact";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
       <Portfolio />
       <Testimonial />
       <Faq />
+      <Contact />
       <Footer />
     </div>
   );
