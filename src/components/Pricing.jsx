@@ -10,14 +10,14 @@ const pricingData = {
       price: "$375",
       period: "per week",
       description: "Best for the teams with small weekly volumes",
-      credits: "100 job credits per month",
+      credits: "100 jobs per month",
       turnaround: "Turn around time 2 hours",
       features: [
-        "500 job credits per month",
-        "Personal artwork Portal Access",
+        "100 Jobs per Month",
+        "Personal Artwork Portal Access",
         "Secure Storage",
         "2 Free Revisions per Job",
-        "Complex Jobs - Quotation-based",
+        "Complex Jobs - Quotation Based",
       ],
     },
     monthly: {
@@ -25,15 +25,31 @@ const pricingData = {
       price: "$1699",
       period: "per month",
       description: "Best for the high-volume users seeking best value",
-      credits: "500 job credits per month",
+      credits: "500 Jobs per month",
       turnaround: "Turn around time 2 hours",
       features: [
         "500 Jobs, 100 More than Weekly",
-        "Personal artwork Portal Access",
+        "Personal Artwork Portal Access",
         "Secure Storage",
         "Unlimited Revisions per Job",
-        "Includes up to 5 complex jobs",
-        "Save $175 compared to 4 Weekly Plans",
+        "Includes Upto 5 Complex Jobs",
+        "Save $175 Compared to 4 Weekly Plans",
+      ],
+    },
+    budget: {
+      originalPrice: "$899",
+      price: "$699",
+      period: "per month",
+      description: "A simple, flexible plan for light artwork needs.",
+      credits: "200 job per month",
+      turnaround: "Turn around time 2 hours",
+      features: [
+        "200 Jobs per Month",
+        "Personal Artwork Portal Access",
+        "Secure Storage",
+        "2 Free Revisions per Job",
+        "Includes Upto 3 Complex Jobs",
+        "Save $50 Compared to 4 Weekly Plans",
       ],
     },
   },
@@ -48,11 +64,11 @@ const pricingData = {
       credits: "125 job credits per month",
       turnaround: "Turn around time 1 hour",
       features: [
-        "500 job credits per month",
-        "Personal artwork Portal Access",
+        "125 Jobs per Month",
+        "Personal Artwork Portal Access",
         "Secure Storage",
         "2 Free Revisions per Job",
-        "Complex Jobs - Quotation-based",
+        "Complex Jobs - Quotation Based",
       ],
     },
     monthly: {
@@ -60,15 +76,31 @@ const pricingData = {
       price: "$1999",
       period: "per month",
       description: "Best for the high-volume users seeking best value",
-      credits: "300 template placements per month",
+      credits: "600 template placements per month",
       turnaround: "Turn around time 1 hour",
       features: [
         "600 Jobs, 100 More than Weekly",
-        "Personal artwork Portal Access",
+        "Personal Artwork Portal Access",
         "Secure Storage",
         "Unlimited Revisions per Job",
-        "Includes up to 5 complex jobs",
-        "Save $400 compared to 4 Weekly Plans",
+        "Includes Upto 5 Complex Jobs",
+        "Save $400 Compared to 4 Weekly Plans",
+      ],
+    },
+    budget: {
+      originalPrice: "$1299",
+      price: "$999",
+      period: "per month",
+      description: "A simple, flexible plan for light artwork needs.",
+      credits: "300 Jobs per month",
+      turnaround: "Turn around time 2 hours",
+      features: [
+        "300 Jobs per Month",
+        "Personal Artwork Portal Access",
+        "Secure Storage",
+        "2 Free Revisions per Job",
+        "Includes Upto 3 Complex Jobs",
+        "Save $200 Compared to 4 Weekly Plans",
       ],
     },
   },
@@ -83,11 +115,11 @@ const pricingData = {
       credits: "50 job credits per month",
       turnaround: "Turn around time 4 hours",
       features: [
-        "50 job credits per month",
-        "Personal artwork Portal Access",
+        "50 Jobs per Month",
+        "Personal Artwork Portal Access",
         "Secure Storage",
         "2 Free Revisions per Job",
-        "Complex Jobs - Quotation-based",
+        "Complex Jobs - Quotation Based",
       ],
     },
     monthly: {
@@ -102,8 +134,23 @@ const pricingData = {
         "Personal artwork Portal Access",
         "Secure Storage",
         "Unlimited Revisions per Job",
-        "Includes up to 5 complex jobs",
-        "Save $600 compared to 4 Weekly Plans",
+        "Includes Upto 5 Complex Jobs",
+        "Save $600 Compared to 4 Weekly Plans",
+      ],
+    },
+    budget: {
+      originalPrice: "$1899",
+      price: "$1699",
+      period: "per month",
+      description: "A simple, flexible plan for light artwork needs.",
+      credits: "150 Jobs per month",
+      turnaround: "Turn around time 2 hours",
+      features: [
+        "150 Jobs per Month",
+        "Personal Artwork Portal Access",
+        "Secure Storage",
+        "2 Free Revisions per Job",
+        "Includes Upto 3 Complex Jobs",
       ],
     },
   },
@@ -136,32 +183,6 @@ const Pricing = () => {
         </div>
 
         {/* Tabs */}
-        {/* <div className="flex justify-center mb-7 md:mb-10 lg:mb-14">
-          <div className="md:text-md md:flex border border-gray-200 rounded-lg p-1 relative overflow-hidden">
-            <div
-              className="absolute top-1 bottom-1 bg-orange-500 rounded-md transition-all duration-300 ease-in-out"
-              style={{
-                left: `${tabs.indexOf(activeTab) * (100 / tabs.length)}%`,
-                width: `${100 / tabs.length}%`,
-                transform: "translateX(4px)",
-                right: "4px",
-              }}
-            />
-            {tabs.map((tab) => (
-              <button
-                key={tab}
-                onClick={() => setActiveTab(tab)}
-                className={`relative z-10 w-full md:w-fit gilroy-m px-6 py-2 rounded-md transition-all duration-300 ease-in-out ${
-                  activeTab === tab
-                    ? "text-white"
-                    : "text-gray-800 hover:text-gray-900"
-                } ${tab !== "Vector Service" ? "mt-1 md:mt-0" : ""}`}
-              >
-                {tab}
-              </button>
-            ))}
-          </div>
-        </div> */}
         <div className="flex justify-center mb-4 md:mb-5 lg:mb-7">
           <div className="md:text-md md:flex border border-gray-200 rounded-lg p-1 relative overflow-hidden">
             <button
@@ -182,7 +203,7 @@ const Pricing = () => {
                   : "text-black"
               }  rounded-md gilroy-m`}
             >
-              Template Placement
+              Redraw & Template Placement
             </button>
             <button
               onClick={() => setActiveTab("Production Ready Package")}
@@ -203,7 +224,7 @@ const Pricing = () => {
             {/* Ideal for Distributors Needing Clean Vector Files */}
             {currentData.description}
           </p>
-          <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto animate-in fade-in duration-500">
+          <div className="grid lg:grid-cols-3 gap-8  lg:mx-13 animate-in fade-in duration-500">
             {/* Weekly Plan */}
             <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm transform transition-all duration-300 hover:shadow-md">
               <h3 className="gilroy-b text-lg lg:text-xl font-semibold text-gray-900 mb-4 lg:mb-6">
@@ -292,6 +313,51 @@ const Pricing = () => {
                 </h4>
                 <ul className="space-y-3 gilroy-m">
                   {currentData.monthly.features.map((feature, index) => (
+                    <li key={index} className="flex items-center">
+                      <Check className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
+                      <span className="text-gray-800">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Budget Plan */}
+            <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm transform transition-all duration-300 hover:shadow-md">
+              <h3 className="gilroy-b text-lg lg:text-xl font-semibold text-gray-900 mb-4 lg:mb-6">
+                Budget Plan
+              </h3>
+
+              <div className="mb-6">
+                <div className="flex items-baseline">
+                  <span className="text-lg lg:text-xl gilroy-sb text-gray-700 line-through mr-1">
+                    {currentData.budget.originalPrice}
+                  </span>
+                  <span className="text-3xl lg:text-[34px] mr-1 gilroy-sb">
+                    $
+                  </span>
+                  <span className="text-3xl lg:text-[34px] font-bold text-gray-900 gilroy-sb">
+                    {currentData.budget.price.replace("$", "")}
+                  </span>
+                  <span className="text-gray-700 ml-2 gilroy-sb text-md lg:text-lg">
+                    {currentData.budget.period}
+                  </span>
+                </div>
+                <p className="text-black mt-2 gilroy-sb">
+                  {currentData.budget.description}
+                </p>
+              </div>
+
+              <button className="w-full gilroy-sb border py-3 px-6 rounded-full font-medium hover:bg-[#FF8419] hover:border-[#FF8419] hover:text-white transition-all duration-300 mb-8">
+                Choose Subscription
+              </button>
+
+              <div>
+                <h4 className="font-semibold text-gray-900 mb-4 gilroy-sb">
+                  Features
+                </h4>
+                <ul className="space-y-3 gilroy-m">
+                  {currentData.budget.features.map((feature, index) => (
                     <li key={index} className="flex items-center">
                       <Check className="h-5 w-5 text-green-500 mr-3 flex-shrink-0" />
                       <span className="text-gray-800">{feature}</span>

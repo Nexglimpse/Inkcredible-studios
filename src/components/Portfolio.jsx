@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import { X, ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 
 // Import thumbnail images
 import T1 from "../assets/images/portfolio/t1.jpg";
@@ -31,16 +31,66 @@ const Portfolio = () => {
 
   // Portfolio items array mapping thumbnails to full images
   const portfolioItems = [
-    { thumbnail: T1, fullImage: P1, alt: "Portfolio Item 1" },
-    { thumbnail: T2, fullImage: P2, alt: "Portfolio Item 2" },
-    { thumbnail: T5, fullImage: P5, alt: "Portfolio Item 5" },
-    { thumbnail: T6, fullImage: P6, alt: "Portfolio Item 6" },
-    { thumbnail: T4, fullImage: P4, alt: "Portfolio Item 4" },
-    { thumbnail: T7, fullImage: P7, alt: "Portfolio Item 7" },
-    { thumbnail: T8, fullImage: P8, alt: "Portfolio Item 8" },
-    { thumbnail: T9, fullImage: P9, alt: "Portfolio Item 9" },
-    { thumbnail: T3, fullImage: P3, alt: "Portfolio Item 3" },
-    { thumbnail: T10, fullImage: P10, alt: "Portfolio Item 10" },
+    {
+      thumbnail: T1,
+      fullImage: P1,
+      alt: "Portfolio Item 1",
+      title: "Vector to Production Ready",
+    },
+    {
+      thumbnail: T2,
+      fullImage: P2,
+      alt: "Portfolio Item 2",
+      title: "Vector to Production Ready",
+    },
+    {
+      thumbnail: T5,
+      fullImage: P5,
+      alt: "Portfolio Item 5",
+      title: "Vector Conversion",
+    },
+    {
+      thumbnail: T6,
+      fullImage: P6,
+      alt: "Portfolio Item 6",
+      title: "Vector to Production Ready",
+    },
+    {
+      thumbnail: T4,
+      fullImage: P4,
+      alt: "Portfolio Item 4",
+      title: "Vector Conversion",
+    },
+    {
+      thumbnail: T7,
+      fullImage: P7,
+      alt: "Portfolio Item 7",
+      title: "Template Placement",
+    },
+    {
+      thumbnail: T8,
+      fullImage: P8,
+      alt: "Portfolio Item 8",
+      title: "Vector to Production Ready",
+    },
+    {
+      thumbnail: T9,
+      fullImage: P9,
+      alt: "Portfolio Item 9",
+      title: "Vector Lineart Conversion",
+    },
+    {
+      thumbnail: T3,
+      fullImage: P3,
+      alt: "Portfolio Item 3",
+      title: "Template Placement",
+    },
+    {
+      thumbnail: T10,
+      fullImage: P10,
+      alt: "Portfolio Item 10",
+      title: "Vector Lineart Conversion",
+    },
   ];
 
   const openLightbox = (index) => {
@@ -102,7 +152,7 @@ const Portfolio = () => {
         {/* Top Left - Split into two sections */}
         <div className="md:col-span-4 md:row-span-1 flex flex-col gap-2">
           <div
-            className="bg-gray-300 rounded-lg h-54 md:h-[calc(55%-0.25rem)] flex items-center justify-center cursor-pointer overflow-hidden group"
+            className="bg-gray-300 rounded-lg h-54 md:h-[calc(55%-0.25rem)] flex items-center justify-center cursor-pointer overflow-hidden group relative"
             onClick={() => openLightbox(0)}
           >
             <img
@@ -110,9 +160,19 @@ const Portfolio = () => {
               className="w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-110"
               alt="Portfolio thumbnail 1"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <div className="flex justify-between items-center">
+                  <h3 className="text-lg md:text-[23px] gilroy-sb">
+                    {portfolioItems[0].title}
+                  </h3>
+                  <ArrowRight size={30} />
+                </div>
+              </div>
+            </div>
           </div>
           <div
-            className="bg-gray-300 rounded-lg h-54 md:h-[calc(45%-0.25rem)] flex items-center justify-center cursor-pointer overflow-hidden group"
+            className="bg-gray-300 rounded-lg h-54 md:h-[calc(45%-0.25rem)] flex items-center justify-center cursor-pointer overflow-hidden group relative"
             onClick={() => openLightbox(1)}
           >
             <img
@@ -120,13 +180,23 @@ const Portfolio = () => {
               className="w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-110"
               alt="Portfolio thumbnail 2"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <div className="flex justify-between items-center">
+                  <h3 className="text-lg md:text-[23px] gilroy-sb">
+                    {portfolioItems[1].title}
+                  </h3>
+                  <ArrowRight size={30} />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Top Middle - Split into two sections */}
         <div className="md:col-span-3 md:row-span-1 flex flex-col gap-2">
           <div
-            className="bg-gray-300 rounded-lg h-54 md:h-[calc(45%-0.25rem)] flex items-center justify-center cursor-pointer overflow-hidden group"
+            className="bg-gray-300 rounded-lg h-54 md:h-[calc(45%-0.25rem)] flex items-center justify-center cursor-pointer overflow-hidden group relative"
             onClick={() => openLightbox(2)}
           >
             <img
@@ -134,9 +204,19 @@ const Portfolio = () => {
               className="w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-110"
               alt="Portfolio thumbnail 5"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <div className="flex justify-between items-center">
+                  <h3 className="text-lg md:text-[23px] gilroy-sb">
+                    {portfolioItems[2].title}
+                  </h3>
+                  <ArrowRight size={30} />
+                </div>
+              </div>
+            </div>
           </div>
           <div
-            className="bg-gray-300 rounded-lg h-54 md:h-[calc(55%-0.25rem)] flex items-center justify-center cursor-pointer overflow-hidden group"
+            className="bg-gray-300 rounded-lg h-54 md:h-[calc(55%-0.25rem)] flex items-center justify-center cursor-pointer overflow-hidden group relative"
             onClick={() => openLightbox(3)}
           >
             <img
@@ -144,13 +224,23 @@ const Portfolio = () => {
               className="w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-110"
               alt="Portfolio thumbnail 6"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <div className="flex justify-between items-center">
+                  <h3 className="text-lg md:text-[23px] gilroy-sb">
+                    {portfolioItems[3].title}
+                  </h3>
+                  <ArrowRight size={30} />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Top Right - Large Rectangle */}
         <div className="md:col-span-4 md:row-span-1">
           <div
-            className="bg-gray-300 rounded-lg h-54 md:h-full flex items-center justify-center cursor-pointer overflow-hidden group"
+            className="bg-gray-300 rounded-lg h-54 md:h-full flex items-center justify-center cursor-pointer overflow-hidden group relative"
             onClick={() => openLightbox(4)}
           >
             <img
@@ -158,12 +248,22 @@ const Portfolio = () => {
               className="w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-110"
               alt="Portfolio thumbnail 4"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <div className="flex justify-between items-center">
+                  <h3 className="text-lg md:text-[23px] gilroy-sb">
+                    {portfolioItems[4].title}
+                  </h3>
+                  <ArrowRight size={30} />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Bottom Left */}
         <div
-          className="md:col-span-4 md:row-span-1 bg-gray-300 rounded-lg h-54 md:h-full flex items-center justify-center cursor-pointer overflow-hidden group"
+          className="md:col-span-4 md:row-span-1 bg-gray-300 rounded-lg h-54 md:h-full flex items-center justify-center cursor-pointer overflow-hidden group relative"
           onClick={() => openLightbox(5)}
         >
           <img
@@ -171,12 +271,22 @@ const Portfolio = () => {
             className="w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-110"
             alt="Portfolio thumbnail 7"
           />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+              <div className="flex justify-between items-center">
+                <h3 className="text-lg md:text-[23px] gilroy-sb">
+                  {portfolioItems[5].title}
+                </h3>
+                <ArrowRight size={30} />
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Bottom Middle */}
         <div className="md:col-span-4 md:row-span-1 flex flex-col gap-2">
           <div
-            className="bg-gray-300 rounded-lg h-54 md:h-[calc(55%-0.25rem)] flex items-center justify-center cursor-pointer overflow-hidden group"
+            className="bg-gray-300 rounded-lg h-54 md:h-[calc(55%-0.25rem)] flex items-center justify-center cursor-pointer overflow-hidden group relative"
             onClick={() => openLightbox(6)}
           >
             <img
@@ -184,9 +294,19 @@ const Portfolio = () => {
               className="w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-110"
               alt="Portfolio thumbnail 8"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <div className="flex justify-between items-center">
+                  <h3 className="text-lg md:text-[23px] gilroy-sb">
+                    {portfolioItems[6].title}
+                  </h3>
+                  <ArrowRight size={30} />
+                </div>
+              </div>
+            </div>
           </div>
           <div
-            className="bg-gray-300 rounded-lg h-54 md:h-[calc(45%-0.25rem)] flex items-center justify-center cursor-pointer overflow-hidden group"
+            className="bg-gray-300 rounded-lg h-54 md:h-[calc(45%-0.25rem)] flex items-center justify-center cursor-pointer overflow-hidden group relative"
             onClick={() => openLightbox(7)}
           >
             <img
@@ -194,13 +314,23 @@ const Portfolio = () => {
               className="w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-110"
               alt="Portfolio thumbnail 9"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <div className="flex justify-between items-center">
+                  <h3 className="text-lg md:text-[23px] gilroy-sb">
+                    {portfolioItems[7].title}
+                  </h3>
+                  <ArrowRight size={30} />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         {/* Bottom Right */}
         <div className="md:col-span-3 md:row-span-1 flex flex-col gap-2">
           <div
-            className="bg-gray-300 rounded-lg h-54 md:h-[calc(45%-0.25rem)] flex items-center justify-center cursor-pointer overflow-hidden group"
+            className="bg-gray-300 rounded-lg h-54 md:h-[calc(45%-0.25rem)] flex items-center justify-center cursor-pointer overflow-hidden group relative"
             onClick={() => openLightbox(8)}
           >
             <img
@@ -208,9 +338,19 @@ const Portfolio = () => {
               className="w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-110"
               alt="Portfolio thumbnail 3"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <div className="flex justify-between items-center">
+                  <h3 className="text-lg md:text-[23px] gilroy-sb">
+                    {portfolioItems[8].title}
+                  </h3>
+                  <ArrowRight size={30} />
+                </div>
+              </div>
+            </div>
           </div>
           <div
-            className="bg-gray-300 rounded-lg h-54 md:h-[calc(55%-0.25rem)] flex items-center justify-center cursor-pointer overflow-hidden group"
+            className="bg-gray-300 rounded-lg h-54 md:h-[calc(55%-0.25rem)] flex items-center justify-center cursor-pointer overflow-hidden group relative"
             onClick={() => openLightbox(9)}
           >
             <img
@@ -218,6 +358,16 @@ const Portfolio = () => {
               className="w-full h-full rounded-lg object-cover transition-transform duration-300 group-hover:scale-110"
               alt="Portfolio thumbnail 10"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                <div className="flex justify-between items-center">
+                  <h3 className="text-lg md:text-[23px] gilroy-sb">
+                    {portfolioItems[9].title}
+                  </h3>
+                  <ArrowRight size={30} />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

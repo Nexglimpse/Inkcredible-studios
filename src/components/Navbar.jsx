@@ -198,7 +198,7 @@ const Navbar = () => {
             <div className="mt-8 pt-6 border-t border-gray-800">
               <a
                 href="#pricing"
-                className="w-full bg-[#FF8419] text-lg gilroy-sb text-white py-3 rounded-xl hover:bg-orange-500 transition-colors duration-200"
+                className="w-full bg-[#FF8419] text-lg gilroy-sb text-white  px-7 py-2.5 rounded-xl hover:bg-orange-500 transition-colors duration-200"
                 onClick={toggleMenu}
               >
                 Get Started
