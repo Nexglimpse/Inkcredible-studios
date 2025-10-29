@@ -45,7 +45,11 @@ export default function Contact() {
         </h1> */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
             {/* Left Column - Contact Info */}
-            <div className="space-y-6">
+            <div
+              data-aos="fade-up"
+              data-aos-duration="500"
+              className="space-y-6"
+            >
               <div>
                 <h2 className="text-[30px] md:text-[40px] lg:text-[40px] xl:text-[52px] lg:text-6xl font-bold leading-tight mb-2 gilroy-b">
                   Still not sure?{" "}
@@ -83,7 +87,7 @@ export default function Contact() {
                     href="mailto:info@mthemeus.com"
                     className="text-black text-lg hover:text-orange-400 transition-colors gilroy-m"
                   >
-                    admin@inkcrediblestudios.com
+                    hello@inkcrediblestudios.com
                   </a>
                 </div>
               </div>
@@ -128,7 +132,7 @@ export default function Contact() {
             </div>
 
             {/* Right Column - Contact Form */}
-            <div>
+            <div data-aos="fade-up" data-aos-duration="500">
               <h3 className="text-xl md:text-[27px] font-semibold mb-4 gilroy-sb">
                 Send us a message
               </h3>

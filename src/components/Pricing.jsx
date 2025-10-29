@@ -13,7 +13,7 @@ const pricingData = {
       credits: "100 jobs per month",
       turnaround: "Turn around time 2 hours",
       features: [
-        "100 Jobs per Month",
+        "100 Jobs per Week",
         "Personal Artwork Portal Access",
         "Secure Storage",
         "2 Free Revisions per Job",
@@ -64,7 +64,7 @@ const pricingData = {
       credits: "125 job credits per month",
       turnaround: "Turn around time 1 hour",
       features: [
-        "125 Jobs per Month",
+        "125 Jobs per Week",
         "Personal Artwork Portal Access",
         "Secure Storage",
         "2 Free Revisions per Job",
@@ -115,7 +115,7 @@ const pricingData = {
       credits: "50 job credits per month",
       turnaround: "Turn around time 4 hours",
       features: [
-        "50 Jobs per Month",
+        "50 Jobs per Week",
         "Personal Artwork Portal Access",
         "Secure Storage",
         "2 Free Revisions per Job",
@@ -224,7 +224,11 @@ const Pricing = () => {
             {/* Ideal for Distributors Needing Clean Vector Files */}
             {currentData.description}
           </p>
-          <div className="grid lg:grid-cols-3 gap-8  lg:mx-13 animate-in fade-in duration-500">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            className="grid lg:grid-cols-3 gap-8  lg:mx-13 animate-in fade-in duration-500"
+          >
             {/* Weekly Plan */}
             <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm transform transition-all duration-300 hover:shadow-md">
               <h3 className="gilroy-b text-lg lg:text-xl font-semibold text-gray-900 mb-4 lg:mb-6">
@@ -368,6 +372,17 @@ const Pricing = () => {
             </div>
           </div>
         </div>
+        <p className="gilroy-m text-center text-gray-700 text-md md:text-lg lg:text-xl mt-10 mb-20">
+          Still have questions about our jobs or pricing? Email us at{" "}
+          <a
+            className="text-orange-500 underline"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=hello@inkcrediblestudios.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hello@inkcrediblestudios.com
+          </a>
+        </p>
       </div>
     </section>
   );

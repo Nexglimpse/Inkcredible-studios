@@ -11,6 +11,7 @@ import Faq from "./components/Faq";
 import Footer from "./components/Footer";
 import YourPlan from "./components/YourPlan";
 import Contact from "./components/Contact";
+import ChatbotWidget from "./components/ChatbotWidget";
 
 const App = () => {
   return (
@@ -18,6 +19,9 @@ const App = () => {
       {/* <div className="h-screen"> */}
       <div className="sticky top-0 z-50 w-full">
         <Navbar />
+      </div>
+      <div className="absolute bottom-0 right-0">
+        <ChatbotWidget />
       </div>
       <Hero />
       {/* </div> */}

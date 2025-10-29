@@ -21,7 +21,11 @@ const TrustedBrands = () => {
           </p>
         </div>
 
-        <div className="container mx-auto">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="500"
+          className="container mx-auto"
+        >
           <div className=" hidden md:flex mt-17 justify-between items-center px-8 lg:px-18 xl:px-30">
             <img
               className="w-[125px] lg:w-[150px] xl:w-[170px]"

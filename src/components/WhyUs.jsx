@@ -28,7 +28,11 @@ const WhyUs = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_1.5fr_1fr] gap-4">
             {/* Column 1 */}
             <div className="flex flex-col gap-4">
-              <div className="bg-purple-300 p-6 rounded-2xl h-[220px] lg:h-[270px] relative  overflow-hidden">
+              <div
+                data-aos="fade-down"
+                data-aos-duration="500"
+                className="bg-purple-300 p-6 rounded-2xl h-[220px] lg:h-[270px] relative  overflow-hidden"
+              >
                 <h3 className="text-[20px] lg:text-[22px] xl:text-[29px] font-bold text-gray-800 mb-3 gilroy-b">
                   Simplified Admin & Invoicing
                 </h3>
@@ -43,7 +47,11 @@ const WhyUs = () => {
                 />
               </div>
 
-              <div className="bg-pink-200 p-6 rounded-2xl  h-[220px] lg:h-[320px] relative  overflow-hidden">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="500"
+                className="bg-pink-200 p-6 rounded-2xl  h-[220px] lg:h-[320px] relative  overflow-hidden"
+              >
                 <h3 className="text-[20px] lg:text-[22px] xl:text-[29px] font-bold text-gray-800 mb-3 gilroy-b">
                   Unlimited Briefs, One Price
                 </h3>
@@ -62,7 +70,11 @@ const WhyUs = () => {
 
             {/* Column 2 */}
             <div className="flex flex-col gap-4">
-              <div className="bg-orange-300 p-6 rounded-2xl h-[220px]  lg:h-[350px] relative  overflow-hidden flex flex-col justify-between items-start">
+              <div
+                data-aos="fade-down"
+                data-aos-duration="500"
+                className="bg-orange-300 p-6 rounded-2xl h-[220px]  lg:h-[350px] relative  overflow-hidden flex flex-col justify-between items-start"
+              >
                 <div>
                   <h3 className="text-[20px] lg:text-[22px] xl:text-[29px] font-bold text-gray-800 mb-3 gilroy-b">
                     Personal Artwork Portal for every client
@@ -91,7 +103,11 @@ const WhyUs = () => {
                 </button>
               </div>
 
-              <div className="bg-green-200 p-6 rounded-2xl  h-[220px]  lg:h-[240px] relative  overflow-hidden">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="500"
+                className="bg-green-200 p-6 rounded-2xl  h-[220px]  lg:h-[240px] relative  overflow-hidden"
+              >
                 <h3 className="text-[20px] lg:text-[22px] xl:text-[29px] font-bold text-gray-800 mb-3 gilroy-b">
                   Predictable Costs = No Budget Surprises
                 </h3>
@@ -109,7 +125,11 @@ const WhyUs = () => {
 
             {/* Column 3 */}
             <div className="flex flex-col gap-4">
-              <div className="bg-blue-200 p-6 rounded-2xl  h-[220px]  lg:h-[320px] relative  overflow-hidden">
+              <div
+                data-aos="fade-down"
+                data-aos-duration="500"
+                className="bg-blue-200 p-6 rounded-2xl  h-[220px]  lg:h-[320px] relative  overflow-hidden"
+              >
                 <h3 className="text-[20px] lg:text-[22px] xl:text-[29px] font-bold text-gray-800 mb-3 gilroy-b">
                   Cut Artwork Overhead
                 </h3>
@@ -124,7 +144,11 @@ const WhyUs = () => {
                   alt=""
                 />
               </div>
-              <div className="hidden lg:block bg-red-200 p-6 rounded-2xl  h-[220px]  lg:h-[270px] relative  overflow-hidden">
+              <div
+                data-aos="fade-up"
+                data-aos-duration="500"
+                className="hidden lg:block bg-red-200 p-6 rounded-2xl  h-[220px]  lg:h-[270px] relative  overflow-hidden"
+              >
                 <h3 className="text-[20px] lg:text-[22px] xl:text-[29px] font-bold text-gray-800 mb-3 gilroy-b">
                   Eliminates Approval Delays
                 </h3>

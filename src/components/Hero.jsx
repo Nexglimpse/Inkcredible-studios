@@ -10,7 +10,11 @@ const Hero = () => {
   return (
     <div className="flex justify-center  min-h-[calc(100vh-120px)] bg-[linear-gradient(0deg,_#ffffff_30%,_rgba(255,203,142,0.66)_100%)] px-2 ">
       <div className="px-4.5 md:px-0 ">
-        <h1 className="text-center text-[30px] md:text-[40px] lg:text-[40px] xl:text-[72px] pt-12 md:pt-16 gilroy-b leading-snug">
+        <h1
+          data-aos="fade-up"
+          data-aos-duration="500"
+          className="text-center text-[30px] md:text-[40px] lg:text-[40px] xl:text-[72px] pt-12 md:pt-16 gilroy-b leading-snug"
+        >
           <span className="hidden md:flex justify-center items-center">
             Subscription That Saves You
             <br /> $4000 a Month !
@@ -20,7 +24,11 @@ const Hero = () => {
           </span>
         </h1>
 
-        <h2 className="text-md md:text-lg xl:text-xl mt-5 gilroy-m leading-snug text-center md:w-1/2 flex justify-center mx-auto">
+        <h2
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="text-md md:text-lg xl:text-xl mt-5 gilroy-m leading-snug text-center md:w-1/2 flex justify-center mx-auto"
+        >
           Get artwork services with unlimited revisions, predictable pricing,
           priority delivery, and your own secure artwork portal. Save time, cut
           costs, and never lose a file, all with zero hidden charges.

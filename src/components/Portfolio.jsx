@@ -148,7 +148,11 @@ const Portfolio = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-11 md:grid-rows-2 gap-2 h-auto md:h-[100vh] lg:h-[130vh] container mx-auto mt-10">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="500"
+        className="grid grid-cols-1 md:grid-cols-11 md:grid-rows-2 gap-2 h-auto md:h-[100vh] lg:h-[130vh] container mx-auto mt-10"
+      >
         {/* Top Left - Split into two sections */}
         <div className="md:col-span-4 md:row-span-1 flex flex-col gap-2">
           <div

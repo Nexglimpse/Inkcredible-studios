@@ -9,7 +9,11 @@ const About = () => {
     >
       <div className="container ">
         <div className="mt-15 md:mt-20 lg:mt-30 lg:flex justify-start">
-          <div className="lg:w-1/2 ">
+          <div
+            className="lg:w-1/2 "
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <h1 className="text-center lg:text-start text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] gilroy-sb leading-snug text-orange-500">
               ABOUT US
             </h1>
@@ -48,7 +52,11 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="mt-15 lg:mt-0 lg:w-1/2 flex justify-center lg:justify-end items-center space-x-6 xl:space-x-10 ">
+          <div
+            className="mt-15 lg:mt-0 lg:w-1/2 flex justify-center lg:justify-end items-center space-x-6 xl:space-x-10 "
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             <div className="border-r pr-10 flex flex-col items-center">
               <img
                 src={Ppai}

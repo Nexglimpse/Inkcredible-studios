@@ -149,7 +149,7 @@ export default function TestimonialsSection() {
           ></iframe>
         </div>
 
-        <div className="mt-15">
+        <div data-aos="fade-up" data-aos-duration="500" className="mt-15">
           <MarqueeRow testimonials={firstRow} direction="left" />
         </div>
       </div>
