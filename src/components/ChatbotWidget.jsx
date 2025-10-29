@@ -74,7 +74,7 @@ export default function ChatbotWidget() {
 
       {/* Chat Window */}
       <div
-        className={`fixed bottom-0 right-0 md:bottom-6 md:right-6 w-full max-w-screen p-3 md:p-0 md:max-w-sm h-screen md:h-[600px] bg-black rounded-3xl shadow-2xl border border-[#1a1a1a] flex flex-col transition-all duration-300 z-50 ${
+        className={`fixed bottom-0 right-0 md:bottom-6 md:right-6 w-full max-w-screen p-3 md:p-0 md:max-w-sm h-screen md:h-[600px] bg-black rounded-3xl shadow-2xl border border-[#a5a5a5] flex flex-col transition-all duration-300 z-50 ${
           isOpen
             ? "scale-100 opacity-100"
             : "scale-95 opacity-0 pointer-events-none"
