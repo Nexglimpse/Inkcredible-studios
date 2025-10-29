@@ -27,7 +27,7 @@ const Hero = () => {
         <h2
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="text-md md:text-lg xl:text-xl mt-5 gilroy-m leading-snug text-center md:w-1/2 flex justify-center mx-auto"
+          className="text-md md:text-lg xl:text-xl mt-5 gilroy-m leading-snug text-center md:w-1/2 xl:w-[700px] flex justify-center mx-auto"
         >
           Get artwork services with unlimited revisions, predictable pricing,
           priority delivery, and your own secure artwork portal. Save time, cut
