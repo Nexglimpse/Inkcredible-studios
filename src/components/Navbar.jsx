@@ -46,7 +46,7 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden lg:block">
-          <ul className="flex gap-1 xl:gap-4">
+          <ul className="flex gap-1 xl:gap-2.5">
             <li className="inline-block text-white text-[15px] gilroy-m mx-6 hover:text-[#FE9E49] transition cursor-pointer">
               <a href="#about">About Us</a>
             </li>
@@ -61,6 +61,9 @@ const Navbar = () => {
             </li>
             <li className="inline-block text-white text-[15px] gilroy-m mx-6 hover:text-[#FE9E49] transition cursor-pointer">
               <a href="#testimonials">Testimonials</a>
+            </li>
+            <li className="inline-block text-white text-[15px] gilroy-m mx-6 hover:text-[#FE9E49] transition cursor-pointer">
+              <a href="#contact">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -190,6 +193,15 @@ const Navbar = () => {
                   onClick={toggleMenu}
                 >
                   Testimonials
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  className="block text-white text-lg gilroy-m hover:text-[#FE9E49] transition-colors duration-200 py-2"
+                  onClick={toggleMenu}
+                >
+                  Contact Us
                 </a>
               </li>
             </ul>
