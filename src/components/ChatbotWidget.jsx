@@ -40,7 +40,7 @@ export default function ChatbotWidget() {
     setTimeout(() => {
       const botMessage = {
         id: (Date.now() + 1).toString(),
-        text: "Our best-seller is the Margherita Pizza 🍕 — simple, fresh, and delicious. But the Pepperoni Special is also very popular with meat lovers.",
+        text: "Hello! how can i help you today?",
         sender: "bot",
         timestamp: new Date(),
       };
