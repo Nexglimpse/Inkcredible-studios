@@ -84,7 +84,7 @@ export default function ChatbotWidget() {
         <div className="bg-black text-white px-6 py-4 rounded-t-3xl flex items-center justify-between">
           <div className="flex items-center gap-3">
             {/* Profile Picture */}
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-400 to-purple-500 flex items-center justify-center text-white font-semibold text-sm">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-orange-400 to-yellow-500 flex items-center justify-center text-white font-semibold text-sm">
               AI
             </div>
             <div>
@@ -116,7 +116,7 @@ export default function ChatbotWidget() {
               <div
                 className={`max-w-xs px-4 py-3 rounded-lg ${
                   message.sender === "user"
-                    ? "bg-blue-100 text-blue-900 rounded-br-none"
+                    ? "bg-orange-100 text-orange-900 rounded-br-none"
                     : "bg-gray-100 text-gray-900 rounded-bl-none"
                 }`}
               >
