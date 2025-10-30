@@ -7,6 +7,7 @@ import {
   ArrowRight,
   X,
 } from "lucide-react";
+import emailjs from "@emailjs/browser";
 import Icon from "../assets/images/logo-icon.png";
 
 export default function Contact() {
@@ -16,11 +17,45 @@ export default function Contact() {
     // phone: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
+    setIsSubmitting(true);
+    setSubmitStatus("");
+
+    // EmailJS configuration
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
+    // Template parameters
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      to_email: "hello@inkcrediblestudios.com",
+      message: formData.message,
+    };
+
+    emailjs
+      .send(serviceId, templateId, templateParams, publicKey)
+      .then(
+        (response) => {
+          console.log("SUCCESS!", response.status, response.text);
+          setSubmitStatus("success");
+          setFormData({ name: "", email: "", message: "" });
+          setTimeout(() => setSubmitStatus(""), 5000);
+        },
+        (error) => {
+          console.log("FAILED...", error);
+          setSubmitStatus("error");
+          setTimeout(() => setSubmitStatus(""), 5000);
+        }
+      )
+      .finally(() => {
+        setIsSubmitting(false);
+      });
   };
 
   const handleChange = (e) => {
@@ -61,8 +96,8 @@ export default function Contact() {
                   Let us help you out.
                 </h2>
                 <p className="mt-4 text-gray-900 text-base md:text-lg leading-relaxed max-w-xl gilroy-m">
-                  Still have questions or doubts? No worries, that’s exactly
-                  what we’re here for. Our team would love to walk you through
+                  Still have questions or doubts? No worries, that's exactly
+                  what we're here for. Our team would love to walk you through
                   our services, clear up any confusion, and help you find the
                   perfect plan that fits your needs.
                 </p>
@@ -137,6 +172,17 @@ export default function Contact() {
                 Send us a message
               </h3>
               <form onSubmit={handleSubmit} className="space-y-5">
+                {submitStatus === "success" && (
+                  <div className="bg-green-50 border border-green-200 text-green-800 px-4 py-3 rounded-lg gilroy-m">
+                    Message sent successfully! We'll get back to you soon.
+                  </div>
+                )}
+                {submitStatus === "error" && (
+                  <div className="bg-red-50 border border-red-200 text-red-800 px-4 py-3 rounded-lg gilroy-m">
+                    Failed to send message. Please try again.
+                  </div>
+                )}
+
                 <div>
                   <input
                     type="text"
@@ -186,10 +232,11 @@ export default function Contact() {
 
                 <button
                   type="submit"
-                  className="relative gilroy-sb text-lg pl-10 w-full bg-[#FF8419] text-white font-semibold rounded-full px-8 py-4 flex items-center gap-2 transition duration-300 hover:shadow-[0_0px_18px_#FF8419]/50 group"
+                  disabled={isSubmitting}
+                  className="relative gilroy-sb text-lg pl-10 w-full bg-[#FF8419] text-white font-semibold rounded-full px-8 py-4 flex items-center gap-2 transition duration-300 hover:shadow-[0_0px_18px_#FF8419]/50 group disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <span className="group-hover:-translate-x-1 transition-transform ">
-                    Send message
+                    {isSubmitting ? "Sending..." : "Send message"}
                   </span>
 
                   <span className="absolute right-3 w-11 h-11 bg-black rounded-full flex items-center justify-center group-hover:translate-x-1 transition-transform">
