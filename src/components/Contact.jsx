@@ -104,7 +104,7 @@ export default function Contact() {
               </div>
 
               <div className="space-y-4 relative">
-                <div>
+                {/* <div>
                   <p className="text-orange-400 gilroy-sb">Give us a call:</p>
                   <a
                     href="tel:1234567890"
@@ -112,7 +112,7 @@ export default function Contact() {
                   >
                     +1 (878) 656 9730
                   </a>
-                </div>
+                </div> */}
 
                 <div>
                   <p className="text-orange-400  gilroy-sb">
@@ -130,28 +130,28 @@ export default function Contact() {
               {/* Social Media Icons */}
               <div className="flex gap-4 ">
                 <a
-                  href="#"
+                  href="https://www.instagram.com/inkcredible_studios?igsh=NHBwcmRtZmlyZmhm"
                   className="w-10 h-10 rounded-full border border-black/80 flex items-center justify-center hover:bg-orange-400 hover:border-orange-400 hover:text-black transition-all"
                   aria-label="Instagram"
                 >
                   <Instagram className="w-4 h-4" />
                 </a>
-                <a
+                {/* <a
                   href="#"
                   className="w-10 h-10 rounded-full border border-black/80 flex items-center justify-center hover:bg-orange-400 hover:border-orange-400 hover:text-black transition-all"
                   aria-label="Facebook"
                 >
                   <Facebook className="w-4 h-4" />
-                </a>
+                </a> */}
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/inkcredible-studios/"
                   className="w-10 h-10 rounded-full border border-black/80 flex items-center justify-center hover:bg-orange-400 hover:border-orange-400 hover:text-black transition-all"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="w-4 h-4" />
                 </a>
                 <a
-                  href="#"
+                  href="https://x.com/inkcredibles?t=p7p-4QKIrF93ngqt7L7gqg&s=08"
                   className="w-10 h-10 rounded-full border border-black/80 flex items-center justify-center hover:bg-orange-400 hover:border-orange-400 hover:text-black transition-all"
                   aria-label="Instagram"
                 >

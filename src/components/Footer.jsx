@@ -26,7 +26,7 @@ export default function Footer() {
                 Abhiramapuram, Chennai 600018, India.
               </p>
               <p>hello@inkcrediblestudios.com</p>
-              <p>+1 (878) 656 9730</p>
+              {/* <p>+1 (878) 656 9730</p> */}
             </div>
           </div>
 
@@ -40,25 +40,25 @@ export default function Footer() {
             {/* Social Icons */}
             <div className="order-1 md:order-2 flex gap-3 md:absolute bottom-0">
               <a
-                href="#"
+                href="https://www.instagram.com/inkcredible_studios?igsh=NHBwcmRtZmlyZmhm"
                 className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:border-orange-500 transition-colors"
               >
                 <Instagram className="w-5 h-5" />
               </a>
-              <a
+              {/* <a
                 href="#"
                 className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:border-orange-500 transition-colors"
               >
                 <Facebook className="w-5 h-5" />
-              </a>
+              </a> */}
               <a
-                href="#"
+                href="https://www.linkedin.com/company/inkcredible-studios/"
                 className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:border-orange-500 transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://x.com/inkcredibles?t=p7p-4QKIrF93ngqt7L7gqg&s=08 "
                 className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:border-orange-500 transition-colors"
               >
                 {/* X/Twitter icon */}
