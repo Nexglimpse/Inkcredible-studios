@@ -21,9 +21,9 @@ export default function Footer() {
 
             <div className="space-y-2 text-sm lg:text-base text-gray-300 gilroy-m">
               <p>
-                No.53, A4, Narmada Apartments, Subramaniam Street,
+                26XP+2V3, Rajan St, Rama Kamath Puram, T. Nagar,
                 <br />
-                Abhiramapuram, Chennai 600018, India.
+                Chennai, Tamil Nadu 600017, India.
               </p>
               <p>hello@inkcrediblestudios.com</p>
               {/* <p>+1 (878) 656 9730</p> */}
@@ -41,6 +41,7 @@ export default function Footer() {
             <div className="order-1 md:order-2 flex gap-3 md:absolute bottom-0">
               <a
                 href="https://www.instagram.com/inkcredible_studios?igsh=NHBwcmRtZmlyZmhm"
+                target="_blank"
                 className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:border-orange-500 transition-colors"
               >
                 <Instagram className="w-5 h-5" />
@@ -53,12 +54,14 @@ export default function Footer() {
               </a> */}
               <a
                 href="https://www.linkedin.com/company/inkcredible-studios/"
+                target="_blank"
                 className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:border-orange-500 transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
                 href="https://x.com/inkcredibles?t=p7p-4QKIrF93ngqt7L7gqg&s=08 "
+                target="_blank"
                 className="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:border-orange-500 transition-colors"
               >
                 {/* X/Twitter icon */}
@@ -83,7 +86,11 @@ export default function Footer() {
           </p>
           <p>
             Designed & Developed By{" "}
-            <a href="https://nexglimpse.com" className="text-white gilroy-m">
+            <a
+              href="https://nexglimpse.com"
+              target="_blank"
+              className="text-white gilroy-m"
+            >
               Nexglimpse
             </a>
           </p>

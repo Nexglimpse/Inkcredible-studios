@@ -131,6 +131,7 @@ export default function Contact() {
               <div className="flex gap-4 ">
                 <a
                   href="https://www.instagram.com/inkcredible_studios?igsh=NHBwcmRtZmlyZmhm"
+                  target="_blank"
                   className="w-10 h-10 rounded-full border border-black/80 flex items-center justify-center hover:bg-orange-400 hover:border-orange-400 hover:text-black transition-all"
                   aria-label="Instagram"
                 >
@@ -145,6 +146,7 @@ export default function Contact() {
                 </a> */}
                 <a
                   href="https://www.linkedin.com/company/inkcredible-studios/"
+                  target="_blank"
                   className="w-10 h-10 rounded-full border border-black/80 flex items-center justify-center hover:bg-orange-400 hover:border-orange-400 hover:text-black transition-all"
                   aria-label="LinkedIn"
                 >
@@ -152,6 +154,7 @@ export default function Contact() {
                 </a>
                 <a
                   href="https://x.com/inkcredibles?t=p7p-4QKIrF93ngqt7L7gqg&s=08"
+                  target="_blank"
                   className="w-10 h-10 rounded-full border border-black/80 flex items-center justify-center hover:bg-orange-400 hover:border-orange-400 hover:text-black transition-all"
                   aria-label="Instagram"
                 >
