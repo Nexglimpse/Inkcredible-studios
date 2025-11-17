@@ -1,73 +1,111 @@
-"use client";
-
 const testimonials = [
   {
     id: 1,
-    name: "Priya Mehta",
-    role: "Startup Founder",
-    avatar: "PM",
+    name: "markswaveyy",
+    role: "Client",
+    avatar: "M",
+    avatarBg: "bg-blue-500",
     rating: 5,
-    text: "Their design sense is impeccable! Incredible Studios transformed our website into an engaging, user-friendly platform. Our clients love the new look.",
+    text: "Great speed and great communication made my idea come to life greatly satisfied",
   },
   {
     id: 2,
-    name: "Sarah Mitchell",
-    role: "Digital Marketing",
-    avatar: "SM",
+    name: "geeem_1145",
+    role: "Client",
+    avatar: "G",
+    avatarBg: "bg-purple-500",
     rating: 5,
-    text: "Incredible Studios truly lives up to its name! Their creativity and attention to detail brought our brand vision to life. The designs were modern, vibrant, and perfectly aligned with our goals.",
+    text: "Quick turnaround, great clean and clear work. Turned out exactly as I needed!",
   },
   {
     id: 3,
-    name: "Daniel Roberts",
-    role: "Tech/SaaS Solutions",
-    avatar: "DR",
+    name: "lmundekis",
+    role: "Client",
+    avatar: "L",
+    avatarBg: "bg-orange-500",
     rating: 5,
-    text: "Working with Incredible Studios was a seamless experience. They understood our requirements and delivered stunning visuals that exceeded expectations. Highly recommended!",
+    text: "Sam is very talented and understood what I wanted with very little direction. Top-level seller and quick service!",
   },
   {
     id: 4,
-    name: "Daniel Roberts",
-    role: "Tech/SaaS Solutions",
-    avatar: "DR",
+    name: "phil_sp",
+    role: "Client",
+    avatar: "P",
+    avatarBg: "bg-pink-500",
     rating: 5,
-    text: "Working with Incredible Studios was a seamless experience. They understood our requirements and delivered stunning visuals that exceeded expectations. Highly recommended!",
+    text: "I supplied basic sketches and ideas, and received a great looking design! Thanks!",
   },
   {
     id: 5,
-    name: "Sarah Mitchell",
-    role: "Digital Marketing",
-    avatar: "SM",
+    name: "mpedersen77",
+    role: "Client",
+    avatar: "M",
+    avatarBg: "bg-indigo-500",
     rating: 5,
-    text: "Incredible Studios truly lives up to its name! Their creativity and attention to detail brought our brand vision to life. The designs were modern, vibrant, and perfectly aligned with our goals.",
+    text: "Sam Paul did a great job, he really got the understanding of what i wanted and executed it well.",
   },
   {
     id: 6,
-    name: "Daniel Roberts",
-    role: "Tech/SaaS Solutions",
-    avatar: "DR",
+    name: "thetortillaboy",
+    role: "Client",
+    avatar: "T",
+    avatarBg: "bg-teal-500",
     rating: 5,
-    text: "Working with Incredible Studios was a seamless experience. They understood our requirements and delivered stunning visuals that exceeded expectations. Highly recommended!",
+    text: "USE THIS SELLER!!!! 10/10 This designer has always delivered quickly and exactly what I ask for! I will always use this seller for everything I do!!!",
+  },
+  {
+    id: 7,
+    name: "brzezniakd1",
+    role: "Client",
+    avatar: "B",
+    avatarBg: "bg-green-500",
+    rating: 5,
+    text: "Delivered ahead of schedule and was super receptive with revisions and had a great idea of what I was looking for. Will definitely use him again.",
+  },
+  {
+    id: 8,
+    name: "catsonmars38",
+    role: "Client",
+    avatar: "C",
+    avatarBg: "bg-cyan-500",
+    rating: 5,
+    text: "Absolutely awesome to work with and the results are phenominal",
+  },
+  {
+    id: 9,
+    name: "iamsamera",
+    role: "Client",
+    avatar: "I",
+    avatarBg: "bg-red-500",
+    rating: 5,
+    text: "Very responsive and easy to work with. Thank you again",
+  },
+  {
+    id: 10,
+    name: "geeem_1145",
+    role: "Client",
+    avatar: "G",
+    avatarBg: "bg-yellow-500",
+    rating: 5,
+    text: "Quick turnaround and easy communication. Work produced is very clean. I provided a rough sketch and colors and he was able to turn it translate it into an enamel pin mock-up quickly and cleanly. Highly recommend!",
+  },
+  {
+    id: 11,
+    name: "ulec04",
+    role: "Client",
+    avatar: "U",
+    avatarBg: "bg-violet-500",
+    rating: 5,
+    text: "Absolutely knocked it out of the park! Was very pleasant to work with and exceeded my expectations! Delivered the art on time as well as went above and beyond to provide 2 versions of what I requested! Definitely will be a returning customer to get other artworks vectored! Thank you for your hard work!",
   },
 ];
 
 const TestimonialCard = ({ testimonial }) => {
-  const getAvatarColor = (avatar) => {
-    const colors = {
-      PM: "bg-orange-500",
-      SM: "bg-purple-500",
-      DR: "bg-orange-500",
-    };
-    return colors[avatar] || "bg-gray-500";
-  };
-
   return (
     <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 min-w-[340px] mx-3">
       <div className="flex items-center gap-3 mb-4">
         <div
-          className={`w-11 h-11 md:w-12 md:h-12 rounded-full ${getAvatarColor(
-            testimonial.avatar
-          )} flex items-center justify-center text-white font-semibold text-sm`}
+          className={`w-11 h-11 md:w-12 md:h-12 rounded-full ${testimonial.avatarBg} flex items-center justify-center text-white font-semibold text-sm`}
         >
           {testimonial.avatar}
         </div>
@@ -139,7 +177,7 @@ export default function TestimonialsSection() {
           <iframe
             width="700"
             height="350"
-            src="https://www.youtube.com/embed/a4-UsVd8NwU?si=QRGncwsq3git1f4q"
+            src="https://www.youtube.com/embed/s7DFhyU3U7I?si=g_YuW55ZJskLS-Bb"
             title="YouTube video player"
             frameborder="10"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

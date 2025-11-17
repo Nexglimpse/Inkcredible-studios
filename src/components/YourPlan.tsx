@@ -48,7 +48,7 @@ const YourPlan = () => {
               data-aos-duration="800"
               className="bg-orange-300 p-6 rounded-2xl h-[270px] lg:h-[285px] relative  overflow-hidden lg:w-1/3"
             >
-              <div className="flex justify-center items-start gap-3 mb-3">
+              <div className="flex lg:justify-center justify-start items-center lg:items-start gap-3 mb-3">
                 <div className="rounded-full bg-black min-w-10 h-10 flex items-center justify-center mt-0.5">
                   <h3 className="gilroy-b text-[20px] md:text-[22px] xl:text-[27px] text-white w-fit ">
                     2

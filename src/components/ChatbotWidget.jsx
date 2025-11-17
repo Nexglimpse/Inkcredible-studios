@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { Send, X, MessageCircle, AlertCircle, ChevronDown } from "lucide-react";
+import LogoIcon from "../assets/images/logo-icon.png";
 export default function ChatbotWidget() {
   const [isOpen, setIsOpen] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
@@ -355,7 +356,7 @@ export default function ChatbotWidget() {
               : "opacity-0 translate-y-2 scale-95 pointer-events-none"
           }`}
         >
-          <p className="gilroy-m text-[16px] text-black shadow border bg-white border-[#dbdbdb] px-3 py-1 pb-1 text-md rounded-t-xl rounded-bl-xl mb-2 mr-2 w-fit animate-bounce-once">
+          <p className="gilroy-m text-sm md:text-[16px] text-black shadow border bg-white border-[#dbdbdb] px-3 py-1 pb-1 text-md rounded-t-xl rounded-bl-xl mb-2 mr-2 w-fit animate-bounce-once">
             Need Help ?
           </p>
         </div>
