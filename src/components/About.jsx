@@ -1,80 +1,94 @@
 import React from "react";
 import Ppai from "../assets/images/ppai.png";
 import Asi from "../assets/images/asi.png";
+
 const About = () => {
   return (
     <section
       id="about"
-      className="flex justify-center items-center px-4.5 md:px-10 xl:px-15 "
+      className="flex justify-center items-center px-4.5 md:px-10 xl:px-15"
+      aria-labelledby="about-heading"
     >
-      <div className="container ">
+      <div className="container">
         <div className="mt-15 md:mt-20 lg:mt-30 lg:flex justify-start">
-          <div
-            className="lg:w-1/2 "
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <h1 className="text-center lg:text-start text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] gilroy-sb leading-snug text-orange-500">
+          <div className="lg:w-1/2" data-aos="fade-up" data-aos-duration="1000">
+            <p className="text-center lg:text-start text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] gilroy-sb leading-snug text-orange-500">
               ABOUT US
-            </h1>
-            <h2 className="text-center lg:text-start text-[26px] md:text-[34px] lg:text-[38px] xl:text-[40px] mt-3 gilroy-b leading-snug ">
+            </p>
+            <h1
+              id="about-heading"
+              className="text-center lg:text-start text-[26px] md:text-[34px] lg:text-[38px] xl:text-[40px] mt-3 gilroy-b leading-snug"
+            >
               About Inkcredible Studios
-            </h2>
+            </h1>
             <p className="text-justify md:text-center lg:text-start text-md md:text-lg xl:text-[20px] mt-3 gilroy-m leading-snug text-black">
               Since 2011, Inkcredible Studios has partnered with U.S.
               promotional product manufacturers, completing 1M+ jobs with
               precision and speed. We specialize in vector artwork, mockups,
               patches, pins, and more—often delivering in just 1 hour. As PPAI
-              and ASI members, we know your industry’s pace. With transparent
+              and ASI members, we know your industry's pace. With transparent
               pricing, personalized service, and a secure portal, we ensure
               reliability without hidden costs or headaches.
             </p>
-            <div className="mt-10 flex justify-center lg:justify-start space-x-4 md:space-x-12 lg:space-x-8">
+            <div
+              className="mt-10 flex justify-center lg:justify-start space-x-4 md:space-x-12 lg:space-x-8"
+              role="region"
+              aria-label="Company statistics"
+            >
               <div className="border-r md:border-r-2 pr-4 xl:pr-10 text-center md:text-start">
-                <h2 className="gilroy-b text-[32px] md:text-[38px] lg:text-[42px] xl:text-5xl">
-                  15+
-                </h2>
+                <p className="gilroy-b text-[32px] md:text-[38px] lg:text-[42px] xl:text-5xl">
+                  15<span className="sr-only"> years</span>+
+                </p>
                 <p className="gilroy-m text-md xl:text-lg">
                   Years of Experience
                 </p>
               </div>
               <div className="border-r md:border-r-2 pr-4 xl:pr-10 text-center md:text-start">
-                <h2 className="gilroy-b text-[32px] md:text-[38px] lg:text-[42px] xl:text-5xl">
-                  500+
-                </h2>
+                <p className="gilroy-b text-[32px] md:text-[38px] lg:text-[42px] xl:text-5xl">
+                  500<span className="sr-only"> clients</span>+
+                </p>
                 <p className="gilroy-m text-md xl:text-lg">Satisfied Clients</p>
               </div>
-              <div className=" text-center md:text-start">
-                <h2 className="gilroy-b text-[32px] md:text-[38px] lg:text-[42px] xl:text-5xl">
-                  1M+
-                </h2>
+              <div className="text-center md:text-start">
+                <p className="gilroy-b text-[32px] md:text-[38px] lg:text-[42px] xl:text-5xl">
+                  1M<span className="sr-only"> orders</span>+
+                </p>
                 <p className="gilroy-m text-md xl:text-lg">Orders Processed</p>
               </div>
             </div>
           </div>
           <div
-            className="mt-15 lg:mt-0 lg:w-1/2 flex justify-center lg:justify-end items-center space-x-6 xl:space-x-10 "
+            className="mt-15 lg:mt-0 lg:w-1/2 flex justify-center lg:justify-end items-center space-x-6 xl:space-x-10"
             data-aos="fade-up"
             data-aos-duration="1000"
+            role="region"
+            aria-label="Professional memberships"
           >
             <div className="border-r pr-10 flex flex-col items-center">
               <img
                 src={Ppai}
                 className="h-[50px] md:h-[70px] xl:h-[110px]"
-                alt=""
+                alt="PPAI (Promotional Products Association International) member logo"
+                loading="lazy"
+                width="auto"
+                height="110"
               />
               <p className="pt-10 gilroy-sb text-center lg:text-lg xl:text-xl">
-                PPAI Membership no: 895883
+                PPAI Membership <span className="sr-only">number</span>no:
+                895883
               </p>
             </div>
-            <div className="flex flex-col  items-center">
+            <div className="flex flex-col items-center">
               <img
                 src={Asi}
                 className="h-[50px] md:h-[70px] xl:h-[110px]"
-                alt=""
+                alt="ASI (Advertising Specialty Institute) member logo"
+                loading="lazy"
+                width="auto"
+                height="110"
               />
               <p className="pt-10 gilroy-sb text-center lg:text-lg xl:text-xl">
-                ASI Membership no: 232758
+                ASI Membership <span className="sr-only">number</span>no: 232758
               </p>
             </div>
           </div>
