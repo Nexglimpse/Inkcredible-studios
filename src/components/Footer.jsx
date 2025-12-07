@@ -78,7 +78,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom copyright */}
-        <div className="mt-8 pt-6 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-gray-400">
+        <div className="mt-8 pt-6 border-t border-gray-800 flex flex-col sm:flex-row justify-between lg:pr-10 items-center gap-4 text-sm text-gray-400">
           <p>
             Copyright © 2025{" "}
             <span className="text-white gilroy-m">INKCREDIBLE</span>. All rights

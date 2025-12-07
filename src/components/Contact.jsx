@@ -71,7 +71,7 @@ export default function Contact() {
       id="contact"
     >
       <div className="container">
-        <h1 className="text-center lg:text-start text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] gilroy-sb leading-snug text-orange-500">
+        <h1 className="text-center mb-2 lg:text-start text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] gilroy-sb leading-snug text-orange-500">
           CONTACT US
         </h1>
         <div className=" mx-auto">

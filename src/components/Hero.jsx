@@ -9,7 +9,7 @@ import Vid from "../assets/videos/vid.webm";
 const Hero = () => {
   return (
     <section
-      className="flex justify-center min-h-[calc(100vh-120px)] bg-[linear-gradient(0deg,_#ffffff_30%,_rgba(255,203,142,0.66)_100%)] px-2"
+      className="flex justify-center bg-[linear-gradient(0deg,_#ffffff_30%,_rgba(255,203,142,0.66)_100%)] px-2"
       aria-label="Hero section"
     >
       <div className="px-4.5 md:px-0">
