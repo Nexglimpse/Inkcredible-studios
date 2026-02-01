@@ -12,6 +12,7 @@ import Footer from "./components/Footer";
 import YourPlan from "./components/YourPlan";
 import Contact from "./components/Contact";
 import ChatbotWidget from "./components/ChatbotWidget";
+import Complexity from "./components/Complexity";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
       <About />
       <WhyUs />
       <YourPlan />
+      <Complexity />
       <Pricing />
       <TrustedBrands />
       <Portfolio />

@@ -1,6 +1,24 @@
 import { useState } from "react";
 import { Plus, Minus } from "lucide-react";
 
+// Helper function to render text with Complex Jobs as a link
+const renderTextWithLink = (text) => {
+  const parts = text.split(/(\bcomplex jobs\b|\bComplex Jobs\b)/i);
+  return parts.map((part, index) =>
+    /^complex jobs$/i.test(part) ? (
+      <a
+        key={index}
+        href="#complexity"
+        className="text-orange-500 hover:text-orange-600 underline transition-colors"
+      >
+        {part}
+      </a>
+    ) : (
+      <span key={index}>{part}</span>
+    ),
+  );
+};
+
 const faqData = [
   {
     id: 1,
@@ -142,11 +160,11 @@ export default function Faq() {
                         {Array.isArray(item.answer)
                           ? item.answer.map((line, i) => (
                               <p key={i} className="mb-2">
-                                {line}
+                                {renderTextWithLink(line)}
                                 <br />
                               </p>
                             ))
-                          : item.answer}
+                          : renderTextWithLink(item.answer)}
                       </p>
                     </div>
                   </div>

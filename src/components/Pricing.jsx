@@ -178,6 +178,24 @@ const Pricing = () => {
 
   const currentData = pricingData[activeTab];
 
+  // Helper function to render features with Complex Jobs as a link
+  const renderFeatureText = (feature) => {
+    const parts = feature.split(/(\bComplex Jobs\b)/);
+    return parts.map((part, index) =>
+      part === "Complex Jobs" ? (
+        <a
+          key={index}
+          href="#complexity"
+          className="text-orange-500 hover:text-orange-600 underline transition-colors"
+        >
+          Complex Jobs
+        </a>
+      ) : (
+        <span key={index}>{part}</span>
+      ),
+    );
+  };
+
   const handleSubscriptionClick = (link) => {
     setSelectedLink(link);
     setIsModalOpen(true);
@@ -324,7 +342,9 @@ const Pricing = () => {
                         className="h-5 w-5 text-green-500 mr-3 flex-shrink-0"
                         aria-hidden="true"
                       />
-                      <span className="text-gray-800">{feature}</span>
+                      <span className="text-gray-800">
+                        {renderFeatureText(feature)}
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -388,7 +408,9 @@ const Pricing = () => {
                         className="h-5 w-5 text-green-500 mr-3 flex-shrink-0"
                         aria-hidden="true"
                       />
-                      <span className="text-gray-800">{feature}</span>
+                      <span className="text-gray-800">
+                        {renderFeatureText(feature)}
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -443,7 +465,9 @@ const Pricing = () => {
                         className="h-5 w-5 text-green-500 mr-3 flex-shrink-0"
                         aria-hidden="true"
                       />
-                      <span className="text-gray-800">{feature}</span>
+                      <span className="text-gray-800">
+                        {renderFeatureText(feature)}
+                      </span>
                     </li>
                   ))}
                 </ul>
