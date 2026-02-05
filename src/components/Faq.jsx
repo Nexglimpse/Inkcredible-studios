@@ -8,7 +8,7 @@ const renderTextWithLink = (text) => {
     /^complex jobs$/i.test(part) ? (
       <a
         key={index}
-        href="#complexity"
+        href="#pricing-panel"
         className="text-orange-500 hover:text-orange-600 underline transition-colors"
       >
         {part}

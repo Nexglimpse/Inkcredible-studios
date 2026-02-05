@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ArrowRight, Check, Sparkles } from "lucide-react";
 import TermsAndConditionsModal from "./TermsAndConditionsModal";
+import ComplexityInfo from "./ComplexityInfo";
 
 const pricingData = {
   "Vector Service": {
@@ -185,7 +186,7 @@ const Pricing = () => {
       part === "Complex Jobs" ? (
         <a
           key={index}
-          href="#complexity"
+          href="#pricing-panel"
           className="text-orange-500 hover:text-orange-600 underline transition-colors"
         >
           Complex Jobs
@@ -475,6 +476,8 @@ const Pricing = () => {
             </article>
           </div>
         </div>
+
+        <ComplexityInfo />
 
         <footer className="mt-10 text-center">
           <p className="gilroy-m text-center text-gray-700 text-md md:text-lg lg:text-xl">
