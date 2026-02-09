@@ -186,8 +186,9 @@ const Pricing = () => {
       part === "Complex Jobs" ? (
         <a
           key={index}
-          href="#pricing-panel"
-          className="text-orange-500 hover:text-orange-600 underline transition-colors"
+          href="#complexity-info"
+          onClick={handleComplexJobsClick}
+          className="text-orange-500 hover:text-orange-600 underline transition-colors cursor-pointer"
         >
           Complex Jobs
         </a>
@@ -210,6 +211,24 @@ const Pricing = () => {
   const handleProceed = () => {
     setIsModalOpen(false);
     // The link navigation is handled in the modal component
+  };
+
+  const handleComplexJobsClick = (e) => {
+    e.preventDefault();
+    const complexityElement = document.getElementById("complexity-info");
+    if (complexityElement) {
+      complexityElement.classList.remove("border-highlight-animation");
+      // Trigger reflow to restart animation
+      void complexityElement.offsetWidth;
+      complexityElement.classList.add("border-highlight-animation");
+    }
+    // Scroll to the element
+    setTimeout(() => {
+      complexityElement?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }, 100);
   };
 
   return (
@@ -477,7 +496,9 @@ const Pricing = () => {
           </div>
         </div>
 
-        <ComplexityInfo />
+        <div id="complexity-info">
+          <ComplexityInfo />
+        </div>
 
         <footer className="mt-10 text-center">
           <p className="gilroy-m text-center text-gray-700 text-md md:text-lg lg:text-xl">
