@@ -140,7 +140,7 @@ export default function ChatbotWidget() {
     // Prevent immediate retries while in cooldown
     if (Date.now() < initCooldownUntil) {
       const waitSec = Math.ceil((initCooldownUntil - Date.now()) / 1000);
-      setError(`Rate limited. Retrying in ${waitSec}s...`);
+      setError(`Retrying in ${waitSec}s...`);
       setIsInitializing(false);
       return;
     }
@@ -204,6 +204,10 @@ export default function ChatbotWidget() {
       setError(
         err.message || "Failed to connect to chat service. Please try again."
       );
+
+      // Set a cooldown to prevent infinite retries on error
+      const cooldownDuration = 5000; // 5 seconds
+      setInitCooldownUntil(Date.now() + cooldownDuration);
 
       // Show error message in chat
       setMessages([
